@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Domain\Service\Queries\GetServiceByAliasQuery;
 use App\Service;
+use App\Services\CanonicalService;
 use App\Services\TextParserService;
 
 /**
@@ -20,10 +21,12 @@ class ServiceController extends PageController
     /**
      * ServiceController constructor.
      * @param TextParserService $parserService
+     * @param CanonicalService $canonicalService
      */
-    public function __construct(TextParserService $parserService)
+    public function __construct(TextParserService $parserService, CanonicalService $canonicalService)
     {
         $this->parserService = $parserService;
+        parent::__construct($canonicalService);
     }
 
     /**
