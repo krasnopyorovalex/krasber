@@ -16,6 +16,6 @@ class GetAdjoiningPortfoliosQuery
      */
     public function handle()
     {
-        return new AdjoiningResult(Portfolio::all());
+        return new AdjoiningResult(Portfolio::orderBy('pos','asc')->get());
     }
 }
