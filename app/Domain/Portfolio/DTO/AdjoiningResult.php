@@ -29,7 +29,7 @@ class AdjoiningResult
     public function nextOrFirst(Portfolio $portfolio)
     {
         return $this->collection->first(function ($value, $key) use ($portfolio) {
-            return $value->id > $portfolio->id;
+            return $value->pos > $portfolio->pos;
         }) ?: $this->collection->first();
     }
 
@@ -40,7 +40,7 @@ class AdjoiningResult
     public function prevOrLast(Portfolio $portfolio)
     {
         return $this->collection->last(function ($value, $key) use ($portfolio) {
-            return $value->id < $portfolio->id;
+            return $value->pos < $portfolio->pos;
         }) ?: $this->collection->last();
     }
 }
