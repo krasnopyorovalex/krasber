@@ -47,9 +47,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-10">
-                    <a class="btn__link-project" target="_blank" href="{{ $portfolio->site_url }}" rel="nofollow">
+                    <div class="btn__link-project">
                         {{ $portfolio->site_url }}
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
