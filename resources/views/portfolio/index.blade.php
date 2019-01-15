@@ -63,14 +63,14 @@
                     <div class="row">
                         <div class="col-only-6 center">
                             @if ($prev)
-                                <a class="prev__project" href="{{ route('portfolio.show', ['alias' => $prev->alias]) }}">
+                                <a class="prev__project" href="{{ route('portfolio.show', ['alias' => $next->alias]) }}">
                                     Предыдущий проект
                                 </a>
                             @endif
                         </div>
                         <div class="col-only-6 center">
                             @if ($next)
-                                <a class="next__project" href="{{ route('portfolio.show', ['alias' => $next->alias]) }}">
+                                <a class="next__project" href="{{ route('portfolio.show', ['alias' => $prev->alias]) }}">
                                     Следующий проект
                                 </a>
                             @endif
