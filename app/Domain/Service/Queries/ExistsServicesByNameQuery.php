@@ -29,6 +29,6 @@ class ExistsServicesByNameQuery
      */
     public function handle()
     {
-        return Service::where('name', $this->service)->exists();
+        return Service::where('menu_name', $this->service)->exists();
     }
 }
