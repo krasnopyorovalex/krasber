@@ -38,7 +38,10 @@
                         </div>
                         <div class="col-4 hidden__xs to__bottom">
                             <div class="ad">
-                                <div class="text">Реклама</div>
+                                <div class="ads__carousel owl-carousel owl-theme">
+                                    <img src="{{ asset('img/banner_free-audit.png') }}" alt="alt" class="call__popup" data-service="Юзабили аудит">
+                                    <img src="{{ asset('img/banner_ads.png') }}" alt="alt" class="call__popup" data-service="Контекстная реклама">
+                                </div>
                             </div>
                             {{--<aside class="other__articles">--}}
                                 {{--<div class="title">ЧИТАЙТЕ ПО ТЕМЕ</div>--}}
@@ -100,5 +103,30 @@
         'form_sub_title' => 'Если Вы не нашли необходимой информации в статье, оставьте завявку и наш менеджер свяжется с Вами в течение 24 часов',
         'btn_text' => 'Задать вопрос'
     ])
+
+
+<div class="popup">
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <div class="order__service-form">
+                    <div class="close__box" title="Закрыть форму">
+                        <svg class="icon close">
+                            <use xlink:href="{{ asset('img/symbols.svg#close') }}"></use>
+                        </svg>
+                    </div>
+                    <div class="wrap">
+                        <div class="desc">
+                            <div class="as__h1">Заказать услугу</div>
+                            <p>Вы можете бесплатно  получить аудит вашего сайта. Вас это не к чему не обязывает.</p>
+                        </div>
+                        @include('layouts.forms.order_service')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup__show-bg"></div>
 
 @endsection
