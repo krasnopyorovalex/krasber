@@ -78,14 +78,14 @@
                         <div class="col-only-6 center">
                             @if ($prev)
                             <a href="{{ route('article.show', $prev->alias) }}" class="prev__project">
-                                {{ $prev->name }}
+                                {{ $prev->name }} <span data-text="Предыдущая статья"></span>
                             </a>
                             @endif
                         </div>
                         <div class="col-only-6 center">
                             @if ($next)
                             <a href="{{ route('article.show', $next->alias) }}" class="next__project">
-                                {{ $next->name }}
+                                {{ $next->name }} <span data-text="Следующая статья"></span>
                             </a>
                             @endif
                         </div>
