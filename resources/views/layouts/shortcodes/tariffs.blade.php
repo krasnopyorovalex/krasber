@@ -141,7 +141,7 @@
                                 <div class="single__block">
                                     <input type="email" name="email" placeholder="Email" autocomplete="off">
                                 </div>
-                                <div class="single__block">
+                                <div class="single__block submit__block">
                                     <button type="submit">Отправить</button>
                                 </div>
                                 <div class="single__block agree__block">
