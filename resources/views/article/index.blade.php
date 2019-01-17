@@ -120,7 +120,7 @@
                             <div class="as__h1">Заказать услугу</div>
                             <p>Вы можете бесплатно  получить аудит вашего сайта. Вас это не к чему не обязывает.</p>
                         </div>
-                        @include('layouts.forms.order_service')
+                        @include('layouts.forms.order_service', ['postfix' => '-banner'])
                     </div>
                 </div>
             </div>
