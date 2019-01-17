@@ -39,8 +39,8 @@
                         <div class="col-4 hidden__xs to__bottom">
                             <div class="ad">
                                 <div class="ads__carousel owl-carousel owl-theme">
-                                    <img src="{{ asset('img/banner_free-audit.png') }}" alt="alt" class="call__popup" data-service="Юзабили аудит">
-                                    <img src="{{ asset('img/banner_ads.png') }}" alt="alt" class="call__popup" data-service="Контекстная реклама">
+                                    <img src="{{ asset('img/banner_free-audit.png') }}" alt="Бесплатный аудит сайта" title="Заказать бесплатный аудит сайта" class="call__popup" data-service="Юзабили аудит">
+                                    <img src="{{ asset('img/banner_ads.png') }}" alt="Контекстная реклама" title="Заказать бесплатную настройку контекстной рекламы" class="call__popup" data-service="Контекстная реклама">
                                 </div>
                             </div>
                             {{--<aside class="other__articles">--}}
