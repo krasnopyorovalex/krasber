@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Portfolio extends Model
 {
+    use AutoAliasTrait;
+
     public $timestamps = false;
 
     protected $casts = [
