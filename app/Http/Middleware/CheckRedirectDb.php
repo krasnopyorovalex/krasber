@@ -38,8 +38,8 @@ class CheckRedirectDb
             return redirect($actualUrl, 301);
         }
 
-        if (strpos($request->fullUrl(), 'index.php') !== false) {
-            $actualUrl = str_replace('/index.php', '', $request->fullUrl());
+        if (strstr($request->fullUrl(), 'index.')) {
+            $actualUrl = preg_replace('#index\.(\w)*(\/)?#', '', $request->fullUrl());
             return redirect($actualUrl, 301);
         }
 
