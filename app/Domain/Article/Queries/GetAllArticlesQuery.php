@@ -3,6 +3,7 @@
 namespace App\Domain\Article\Queries;
 
 use App\Article;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
  * Class GetAllArticlesQuery
@@ -44,7 +45,13 @@ class GetAllArticlesQuery
         }
 
         if ($this->limit) {
-            return $articles->paginate($this->limit, array('*'), 'page', intval(request('page')));
+            $result = $articles->paginate($this->limit, array('*'), 'page', intval(request('page')));
+
+            if (!$result->count()) {
+                throw new NotFoundHttpException();
+            }
+
+            return $result;
         }
 
         return $articles->get();
