@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-10-27 09:52:58.
+    * Generated on 2019-01-25 10:30:13.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -13,6 +13,7 @@ namespace PHPSTORM_META {
     override(new \Illuminate\Contracts\Container\Container, map([
         '' => '@',
         'App\Services\LinkGeneratorService' => \App\Services\LinkGeneratorService::class,
+        'App\Services\TextParserService' => \App\Services\TextParserService::class,
         'App\Services\TreeRecursiveBuildService' => \App\Services\TreeRecursiveBuildService::class,
         'App\Services\UploadCkeditorImageService' => \App\Services\UploadCkeditorImageService::class,
         'App\Services\UploadImagesService' => \App\Services\UploadImagesService::class,
@@ -36,6 +37,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -157,6 +159,7 @@ namespace PHPSTORM_META {
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
         'App\Services\LinkGeneratorService' => \App\Services\LinkGeneratorService::class,
+        'App\Services\TextParserService' => \App\Services\TextParserService::class,
         'App\Services\TreeRecursiveBuildService' => \App\Services\TreeRecursiveBuildService::class,
         'App\Services\UploadCkeditorImageService' => \App\Services\UploadCkeditorImageService::class,
         'App\Services\UploadImagesService' => \App\Services\UploadImagesService::class,
@@ -180,6 +183,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -301,6 +305,7 @@ namespace PHPSTORM_META {
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
         'App\Services\LinkGeneratorService' => \App\Services\LinkGeneratorService::class,
+        'App\Services\TextParserService' => \App\Services\TextParserService::class,
         'App\Services\TreeRecursiveBuildService' => \App\Services\TreeRecursiveBuildService::class,
         'App\Services\UploadCkeditorImageService' => \App\Services\UploadCkeditorImageService::class,
         'App\Services\UploadImagesService' => \App\Services\UploadImagesService::class,
@@ -324,6 +329,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -445,6 +451,7 @@ namespace PHPSTORM_META {
     override(\App::make(0), map([
         '' => '@',
         'App\Services\LinkGeneratorService' => \App\Services\LinkGeneratorService::class,
+        'App\Services\TextParserService' => \App\Services\TextParserService::class,
         'App\Services\TreeRecursiveBuildService' => \App\Services\TreeRecursiveBuildService::class,
         'App\Services\UploadCkeditorImageService' => \App\Services\UploadCkeditorImageService::class,
         'App\Services\UploadImagesService' => \App\Services\UploadImagesService::class,
@@ -468,6 +475,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -589,6 +597,7 @@ namespace PHPSTORM_META {
     override(\App::makeWith(0), map([
         '' => '@',
         'App\Services\LinkGeneratorService' => \App\Services\LinkGeneratorService::class,
+        'App\Services\TextParserService' => \App\Services\TextParserService::class,
         'App\Services\TreeRecursiveBuildService' => \App\Services\TreeRecursiveBuildService::class,
         'App\Services\UploadCkeditorImageService' => \App\Services\UploadCkeditorImageService::class,
         'App\Services\UploadImagesService' => \App\Services\UploadImagesService::class,
@@ -612,6 +621,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -733,6 +743,7 @@ namespace PHPSTORM_META {
     override(\app(0), map([
         '' => '@',
         'App\Services\LinkGeneratorService' => \App\Services\LinkGeneratorService::class,
+        'App\Services\TextParserService' => \App\Services\TextParserService::class,
         'App\Services\TreeRecursiveBuildService' => \App\Services\TreeRecursiveBuildService::class,
         'App\Services\UploadCkeditorImageService' => \App\Services\UploadCkeditorImageService::class,
         'App\Services\UploadImagesService' => \App\Services\UploadImagesService::class,
@@ -756,6 +767,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,
@@ -877,6 +889,7 @@ namespace PHPSTORM_META {
     override(\resolve(0), map([
         '' => '@',
         'App\Services\LinkGeneratorService' => \App\Services\LinkGeneratorService::class,
+        'App\Services\TextParserService' => \App\Services\TextParserService::class,
         'App\Services\TreeRecursiveBuildService' => \App\Services\TreeRecursiveBuildService::class,
         'App\Services\UploadCkeditorImageService' => \App\Services\UploadCkeditorImageService::class,
         'App\Services\UploadImagesService' => \App\Services\UploadImagesService::class,
@@ -900,6 +913,7 @@ namespace PHPSTORM_META {
         'Illuminate\Session\Middleware\StartSession' => \Illuminate\Session\Middleware\StartSession::class,
         'NunoMaduro\Collision\Contracts\Adapters\Phpunit\Listener' => \NunoMaduro\Collision\Adapters\Phpunit\Listener::class,
         'NunoMaduro\Collision\Contracts\Provider' => \NunoMaduro\Collision\Provider::class,
+        'Psr\Http\Message\ResponseInterface' => \Zend\Diactoros\Response::class,
         'auth' => \Illuminate\Auth\AuthManager::class,
         'auth.driver' => \Illuminate\Auth\SessionGuard::class,
         'auth.password' => \Illuminate\Auth\Passwords\PasswordBrokerManager::class,

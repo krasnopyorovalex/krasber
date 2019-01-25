@@ -40,7 +40,7 @@ class CheckRedirectDb
 
         if (strpos($request->fullUrl(), 'index.php') !== false) {
             $actualUrl = str_replace('/index.php', '', $request->fullUrl());
-            return redirect(null, 301)->to($actualUrl);
+            return redirect($actualUrl, 301);
         }
 
         return $next($request);
