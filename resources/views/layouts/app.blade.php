@@ -15,9 +15,9 @@
 </head>
 <body>
     <header itemscope="" itemtype="http://schema.org/WPHeader">
-        <meta itemprop="headline" content="Веб-студия Красбер в Крыму и Краснодарском крае">
+        <meta itemprop="headline" content="Веб-студия Красбер в Симферополе и Крыму">
         <meta itemprop="description" content="Создание и seo-продвижение веб-сайтов, настройка рекламы в интернете по всей России">
-        <meta itemprop="keywords" content="создание, продвижение, интернет-реклама, крым, краснодар">
+        <meta itemprop="keywords" content="создание, продвижение, интернет-реклама, крым, симферополь">
         <div class="sticky__menu{{ is_main_page() ? '' : ' sticky__menu-always' }}">
             <div class="container">
                 <div class="top__line">
@@ -139,7 +139,7 @@
             </div>
         </div>
     </footer>
-    
+
     <div class="notify"></div>
 
     <script type="text/javascript" >
