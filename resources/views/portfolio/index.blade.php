@@ -8,7 +8,7 @@
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset($portfolio->image->path) }}">
     <meta property="og:description" content="{{ $portfolio->description }}">
-    <meta property="og:site_name" content="Веб-студия Красбер в Крыму и Краснодарском крае">
+    <meta property="og:site_name" content="Веб-студия Красбер в Симферополе и Крыму">
     <meta property="og:locale" content="ru_RU">
 @endpush
 
