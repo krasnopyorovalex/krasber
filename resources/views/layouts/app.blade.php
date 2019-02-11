@@ -21,9 +21,11 @@
         <div class="sticky__menu{{ is_main_page() ? '' : ' sticky__menu-always' }}">
             <div class="container">
                 <div class="top__line">
-                    <svg class="icon menu">
-                        <use xlink:href="{{ asset('img/symbols.svg#menu') }}"></use>
-                    </svg>
+                    <a href="tel:89787547499" class="phone__svg">
+                        <svg class="phone">
+                            <use xlink:href="{{ asset('img/symbols.svg#phone') }}"></use>
+                        </svg>
+                    </a>
                     <div class="logo">
                         <a href="{{ route('page.show') }}">
                             <img class="desktop__logo" src="{{ is_main_page() ? asset('img/logo_white.svg') : asset('img/logo_green.svg') }}" data-green-logo="{{ is_main_page() ? asset('img/logo_green.svg'): '' }}" alt="Создание сайта в веб-студии Красбер" title="Веб-студия Красбер" />
@@ -32,11 +34,9 @@
                     </div>
                     <!-- /.logo -->
                     @includeWhen($menu->get('menu_header'), 'layouts.menus.header', ['menu' => $menu, 'services' => $services])
-                    <a href="tel:89787547499" class="phone__svg">
-                        <svg class="phone">
-                            <use xlink:href="{{ asset('img/symbols.svg#phone') }}"></use>
-                        </svg>
-                    </a>
+                    <svg class="icon menu">
+                        <use xlink:href="{{ asset('img/symbols.svg#menu') }}"></use>
+                    </svg>
                     <div class="phone__email">
                         <a href="tel:89787547499" title="Позвонить" class="phone__link">
                             <span>8 (978) 754-74-99</span>

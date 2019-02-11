@@ -8,6 +8,7 @@
                         @foreach ($services as $service)
                             <li>
                                 <a itemprop="url" href="{{ route('service.show', $service->alias) }}">{{ $service->getMenuName() }}</a>
+                                <span><i></i></span>
                                 @if ($service->services->count())
                                     <ul>
                                         @foreach ($service->services as $subService)
