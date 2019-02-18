@@ -110,9 +110,9 @@ if (! function_exists('add_css_class')) {
 if (! function_exists('check_equal_path')) {
     /**
      * @param string $alias
-     * @return string
+     * @return bool
      */
-    function check_equal_path(string $alias)
+    function check_equal_path(string $alias): bool
     {
         return request()->getPathInfo() == '/' . $alias;
     }
