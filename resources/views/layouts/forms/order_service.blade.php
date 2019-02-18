@@ -7,7 +7,7 @@
                     <optgroup label="{{ $service->menu_name }}">
                         @if ($service->services->count())
                             @foreach ($service->services as $subService)
-                                <option value="{{ $subService->menu_name }}">{{ $subService->menu_name }}</option>
+                                <option value="{{ $subService->menu_name }}"{{ check_equal_path($subService->alias) ? ' selected' : '' }}>{{ $subService->menu_name }}</option>
                             @endforeach
                         @endif
                     </optgroup>

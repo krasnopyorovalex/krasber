@@ -106,3 +106,14 @@ if (! function_exists('add_css_class')) {
         return count($classes) ? ' class="'. implode(' ', $classes) .'"' : '';
     }
 }
+
+if (! function_exists('check_equal_path')) {
+    /**
+     * @param string $alias
+     * @return string
+     */
+    function check_equal_path(string $alias)
+    {
+        return request()->getPathInfo() == '/' . $alias;
+    }
+}
