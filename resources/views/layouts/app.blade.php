@@ -76,11 +76,6 @@
                                         <use xlink:href="{{ asset('img/symbols.svg#viber') }}"></use>
                                     </svg>
                                 </a>
-                                <a href="skype:live:info_773422" target="_blank">
-                                    <svg class="icon skype">
-                                        <use xlink:href="{{ asset('img/symbols.svg#skype') }}"></use>
-                                    </svg>
-                                </a>
                                 <a href="https://www.instagram.com/krasber_studio/" target="_blank" rel="noopener noreferrer">
                                     <svg class="icon insta">
                                         <use xlink:href="{{ asset('img/symbols.svg#insta') }}"></use>
