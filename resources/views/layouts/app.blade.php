@@ -151,6 +151,7 @@
         gtag('config', 'UA-107358703-1');
     </script>
     <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-224888-EpCh';</script>
+    <script src="{{ asset('js/jquery.3.3.1.min.js') }}"></script>
     <script src="{{ asset('js/app.min.js') }}"></script>
 </body>
 </html>
