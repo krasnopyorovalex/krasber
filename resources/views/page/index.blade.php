@@ -29,7 +29,9 @@
                     </div>
                     <div class="col-7">
                         <div class="main__image-top">
-                            <img src="{{ asset($page->image->path) }}" alt="{{ $page->image->alt }}" title="{{ $page->image->title }}">
+                            <a href="{{ route('page.show', ['alias' => 'create-site']) }}">
+                                <img src="{{ asset($page->image->path) }}" alt="{{ $page->image->alt }}" title="{{ $page->image->title }}">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +137,7 @@
             <div class="row">
                 <div class="col-10">
                     <div class="step">05</div>
-                    <h3 class="as__h1">Портфолио</h3>
+                    <a href="{{ route('page.show', ['alias' => 'portfolio']) }}"><h3 class="as__h1">Портфолио</h3></a>
                     <div class="info">Работы нашей веб-студии, разработанные сайты, полезные кейсы.</div>
 
                     <div class="portfolio__list">
