@@ -2,7 +2,7 @@
     <ul>
         @foreach($menu->get('menu_header') as $item)
             <li{!! add_css_class($item) !!}>
-                <a itemprop="url" href="{{ ! $item->is_delimiter ? $item->link : '#'}}">{{ $item->name }}</a>
+                <a itemprop="url" href="{{ $item->link }}">{{ $item->name }}</a>
                 @if ($item->is_service && $services->count())
                     <ul>
                         @foreach ($services as $service)
@@ -18,7 +18,7 @@
                                 @endif
                             </li>
                         @endforeach
-                    </ul>    
+                    </ul>
                 @endif
             </li>
         @endforeach
