@@ -24,7 +24,7 @@
                         <div class="col-8">
                             <article>
                                 <time datetime="{{ $article->published_at->format('c') }}">
-                                    {{ $article->published_at->formatLocalized('%d %b %Y') }}
+                                    {{ $article->published_at->formatLocalized('%d %b %Y') }} г.
                                 </time>
 
                                 <div class="content">

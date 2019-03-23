@@ -47,7 +47,7 @@
                             @endif
                             <div itemprop="articleBody" class="preview">
                                 <time itemprop="datePublished" datetime="{{ $article->published_at->format('c') }}">
-                                    {{ $article->published_at->formatLocalized('%d %b %Y') }}
+                                    {{ $article->published_at->formatLocalized('%d %b %Y') }} г.
                                 </time>
                                 <a itemprop="headline" href="{{ $article->url }}" class="name">{{ $article->name }}</a>
                                 {!! $article->preview !!}
