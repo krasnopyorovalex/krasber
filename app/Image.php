@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Services\ImageResizerService;
 use Illuminate\Database\Eloquent\Model;
 
 /**

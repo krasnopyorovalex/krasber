@@ -38,7 +38,7 @@ class GetAllArticlesQuery
     public function handle()
     {
         $articles = new Article();
-        $articles = $articles->orderBy('published_at', 'desc');
+        $articles = $articles->with(['image'])->orderBy('published_at', 'desc');
 
         if ($this->isPublished) {
            $articles->where('is_published', '1');

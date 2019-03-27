@@ -24,7 +24,6 @@ class Article extends Model
     use AutoAliasTrait;
 
     public $timestamps = false;
-
     /**
      * The attributes that should be mutated to dates.
      *
@@ -33,7 +32,6 @@ class Article extends Model
     protected $dates = [
         'published_at'
     ];
-
     /**
      * @var array
      */
