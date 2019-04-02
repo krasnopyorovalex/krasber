@@ -39,7 +39,7 @@ class Page extends Model
     /**
      * @var array
      */
-    protected $fillable = ['template', 'name', 'slogan', 'title', 'description', 'text', 'alias', 'is_published'];
+    protected $guarded = [];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphOne
@@ -54,7 +54,7 @@ class Page extends Model
      */
     public function getUrlAttribute(): string
     {
-        return route("page.show", $this->alias);
+        return route("page.show", str_replace('index', '', $this->alias));
     }
 
     /**

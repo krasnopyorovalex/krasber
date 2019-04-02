@@ -14,7 +14,7 @@ class AddColumnTemplateToPagesTable extends Migration
     public function up()
     {
         Schema::table('pages', function (Blueprint $table) {
-            $table->string('template', 24)->after('id');
+            $table->string('template', 24)->default('page.index')->after('id');
         });
     }
 

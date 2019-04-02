@@ -14,7 +14,7 @@ class AddColumnCategoryToPortfoliosTable extends Migration
     public function up()
     {
         Schema::table('portfolios', function (Blueprint $table) {
-            $table->string('category', 16)->after('id');
+            $table->string('category', 16)->default('cat_01')->after('id');
         });
     }
 

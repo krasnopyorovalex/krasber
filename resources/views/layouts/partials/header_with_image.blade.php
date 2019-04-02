@@ -11,9 +11,11 @@
                         </div>
                     </div>
                     <div class="col-5 hidden__xs">
+                        @if($page->image)
                         <figure>
                             <img src="{{ asset($page->image->path) }}" alt="{{ $page->image->alt }}" title="{{ $page->image->title }}">
                         </figure>
+                        @endif
                     </div>
                 </div>
             </div>

@@ -29,9 +29,11 @@
                     </div>
                     <div class="col-7">
                         <div class="main__image-top">
+                            @if($page->image)
                             <a href="{{ route('page.show', ['alias' => 'create-site']) }}">
                                 <img src="{{ asset($page->image->path) }}" alt="{{ $page->image->alt }}" title="{{ $page->image->title }}">
                             </a>
+                            @endif
                         </div>
                     </div>
                 </div>

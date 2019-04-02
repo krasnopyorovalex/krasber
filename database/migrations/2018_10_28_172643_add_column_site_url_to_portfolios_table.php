@@ -1,4 +1,4 @@
-<?php $table->string('site_url', 64)->nullable()->after('alias');
+<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;

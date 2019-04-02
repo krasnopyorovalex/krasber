@@ -13,13 +13,13 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\Page::class, function (Faker $faker) {
+$factory->define(App\Article::class, function (Faker $faker) {
     return [
-        'template' => 'page.index',
         'name' => $faker->sentence,
-        'title' => $faker->sentence,
+        'title' => $faker->title,
         'description' => $faker->sentence,
-        'text' => $faker->paragraph,
-        'alias' => 'index'
+        'text' => $faker->text,
+        'preview' => $faker->paragraph,
+        'alias' => $faker->slug()
     ];
 });

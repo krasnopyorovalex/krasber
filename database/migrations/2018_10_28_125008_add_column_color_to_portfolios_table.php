@@ -14,7 +14,7 @@ class AddColumnColorToPortfoliosTable extends Migration
     public function up()
     {
         Schema::table('portfolios', function (Blueprint $table) {
-            $table->string('color', 16)->after('category');
+            $table->string('color', 16)->default('peach')->after('category');
         });
     }
 

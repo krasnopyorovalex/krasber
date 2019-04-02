@@ -47,7 +47,7 @@ class GetAllArticlesQuery
         if ($this->limit) {
             $result = $articles->paginate($this->limit, array('*'), 'page', intval(request('page')));
 
-            if (!$result->count()) {
+            if (! $articles && ! $result->count()) {
                 throw new NotFoundHttpException();
             }
 
