@@ -37,7 +37,7 @@
                             <div itemscope="" itemprop="image" itemtype="http://schema.org/ImageObject" class="image">
                                 <figure>
                                     <a href="{{ $article->url }}">
-                                        <img itemprop="url contentUrl" src="{{ asset($article->image->path) }}" alt="{{ $article->image->alt }}" title="{{ $article->image->title }}">
+                                        <img itemprop="url contentUrl" src="" data-src="{{ asset($article->image->path) }}" alt="{{ $article->image->alt }}" title="{{ $article->image->title }}">
                                         <meta itemprop="url" content="{{ asset($article->image->path) }}">
                                         <meta itemprop="width" content="319">
                                         <meta itemprop="height" content="216">
