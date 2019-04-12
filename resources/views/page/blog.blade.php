@@ -35,9 +35,9 @@
                         <article>
                             @if ($article->image)
                             <div itemscope="" itemprop="image" itemtype="http://schema.org/ImageObject" class="image">
-                                <figure class="is__loaded">
+                                <figure class="{{ $loop->index > 1 ? 'is__loaded' : '' }}">
                                     <a href="{{ $article->url }}">
-                                        <img itemprop="url contentUrl" src="" data-src="{{ asset($article->image->path) }}" alt="{{ $article->image->alt }}" title="{{ $article->image->title }}">
+                                        <img itemprop="url contentUrl" src="{{ $loop->index > 1 ? '' : asset($article->image->path) }}" @if($loop->index > 1)data-src="{{ asset($article->image->path) }}"@endif alt="{{ $article->image->alt }}" title="{{ $article->image->title }}">
                                         <meta itemprop="url" content="{{ asset($article->image->path) }}">
                                         <meta itemprop="width" content="319">
                                         <meta itemprop="height" content="216">
