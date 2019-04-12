@@ -35,7 +35,7 @@
                         <article>
                             @if ($article->image)
                             <div itemscope="" itemprop="image" itemtype="http://schema.org/ImageObject" class="image">
-                                <figure>
+                                <figure class="is__loaded">
                                     <a href="{{ $article->url }}">
                                         <img itemprop="url contentUrl" src="" data-src="{{ asset($article->image->path) }}" alt="{{ $article->image->alt }}" title="{{ $article->image->title }}">
                                         <meta itemprop="url" content="{{ asset($article->image->path) }}">
