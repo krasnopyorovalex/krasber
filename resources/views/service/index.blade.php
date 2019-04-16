@@ -191,7 +191,7 @@
                                             <use xlink:href="./img/symbols.svg#{{ $relatedService->icon }}"></use>
                                         </svg>
                                     </a>
-                                    <a href="{{ route('service.show', ['alias' => $relatedService->alias]) }}" class="title">{{ $relatedService->name }}</a>
+                                    <a href="{{ route('service.show', ['alias' => $relatedService->alias]) }}" class="title">{{ $relatedService->menu_name ?: $relatedService->name }}</a>
                                     {!! preg_replace('#<ul[^.]*<\/ul>#', '', $relatedService->preview) !!}
                                     <div class="price">{{ $relatedService->getPrice() }}</div>
                                     <a href="{{ route('service.show', ['alias' => $relatedService->alias]) }}" class="btn_style-two">Подробнее</a>
