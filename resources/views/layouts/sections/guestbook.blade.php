@@ -2,7 +2,6 @@
     <div class="container">
         <div class="row">
             <div class="col-10">
-                <div class="step">04</div>
                 <div class="as__h1">Отзывы клиентов</div>
 
                 <div class="owl-carousel owl-theme">

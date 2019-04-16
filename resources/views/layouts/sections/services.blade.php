@@ -2,7 +2,6 @@
     <div class="container">
         <div class="row">
             <div class="col-10">
-                <div class="step">02</div>
                 <h2 class="as__h1">Наши услуги</h2>
 
                 <div class="services__list">

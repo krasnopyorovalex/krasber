@@ -48,7 +48,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-10">
-                    <div class="step">01</div>
                     <h1>{{ $page->name }}</h1>
                     {!! $page->text !!}
                 </div>
@@ -80,7 +79,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-10">
-                    <div class="step">03</div>
                     <h2 class="as__h1">Несколько фактов о нас</h2>
                     <div class="why__we-list">
                         <div class="why__we-list-item">
@@ -138,7 +136,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-10">
-                    <div class="step">05</div>
                     <a href="{{ route('page.show', ['alias' => 'portfolio']) }}"><h3 class="as__h1">Новые работы нашей веб-студии</h3></a>
                     <div class="info">Работы нашей веб-студии, разработанные сайты, полезные кейсы.</div>
 
@@ -162,7 +159,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-10">
-                    <div class="step">06</div>
                     <h3 class="as__h1">Мы работаем</h3>
                     <div class="info">Инструменты, которые мы используем для анализа и увеличения эффективности работы сайта.</div>
                     <div class="we__work-list">
