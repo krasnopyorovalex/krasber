@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <!-- /main navigation -->
-                
+
                 <div class="info_btn">
                     <button type="button" data-toggle="modal" data-target="#modal_info" class="btn btn-primary btn-labeled btn-xlg"><b><i class="icon-info3"></i></b> Информация</button>
                 </div>
@@ -174,16 +174,16 @@
 <!-- /basic modal -->
 
 <!-- Scripts -->
-<script src="{{ asset('dashboard/assets/js/jquery.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/plugins/loaders/pace.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/core/libraries/bootstrap.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/plugins/loaders/blockui.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/plugins/forms/styling/uniform.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/plugins/notifications/pnotify.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/core/libraries/jquery_ui/interactions.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/plugins/forms/selects/select2.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/core/app.min.js') }}" defer></script>
-<script src="{{ asset('dashboard/assets/js/core/user_scripts.js') }}" defer></script>
+<script src="{{ asset('dashboard/assets/js/jquery.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/plugins/loaders/pace.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/core/libraries/bootstrap.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/plugins/loaders/blockui.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/plugins/forms/styling/uniform.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/plugins/notifications/pnotify.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/core/libraries/jquery_ui/interactions.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/plugins/forms/selects/select2.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/core/app.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/js/core/user_scripts.js') }}"></script>
 @stack('scripts')
 </body>
 </html>
