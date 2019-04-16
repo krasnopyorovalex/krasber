@@ -139,7 +139,7 @@
             <div class="row">
                 <div class="col-10">
                     <div class="step">05</div>
-                    <a href="{{ route('page.show', ['alias' => 'portfolio']) }}"><h3 class="as__h1">Портфолио</h3></a>
+                    <a href="{{ route('page.show', ['alias' => 'portfolio']) }}"><h3 class="as__h1">Новые работы нашей веб-студии</h3></a>
                     <div class="info">Работы нашей веб-студии, разработанные сайты, полезные кейсы.</div>
 
                     <div class="portfolio__list">
