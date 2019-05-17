@@ -20,6 +20,7 @@ Route::post('form/order-consultation', 'FormHandlerController@orderConsultation'
 Route::post('form/order-tariff', 'FormHandlerController@orderTariff')->name('order.tariff.send');
 Route::post('form/subscribe', 'FormHandlerController@subscribe')->name('subscribe.send');
 Route::get('sitemap.xml', 'SitemapController@xml')->name('sitemap.xml');
+//Route::get('krasber.rss', 'RssController@show')->name('rss.show');
 
 Route::group(['middleware' => ['redirector', 'shortcode']], function () {
     Route::get('{alias}', 'ServiceController@show')->name('service.show');

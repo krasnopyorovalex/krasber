@@ -22,6 +22,7 @@ class Portfolio extends Model
         'cat_01' => 'индивидуальный проект',
         'cat_02' => 'сайт каталог',
         'cat_03' => 'CRM-система',
+        'cat_04' => 'готовый дизайн сайта',
     ];
 
     private $colors = [
