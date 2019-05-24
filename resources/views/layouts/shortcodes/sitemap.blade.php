@@ -27,12 +27,12 @@
             <ul>
                 @foreach($services as $service)
                     <li>
-                        <a href="{{ route('service.show', ['alias' => $service->alias]) }}">{{ $service->name }}</a>
+                        <a href="{{ route('service.show', ['alias' => $service->alias]) }}">{{ $service->getMenuName() }}</a>
                         @if (count($service->services))
                             <ul>
                                 @foreach($service->services as $subService)
                                     <li>
-                                        <a href="{{ route('service.show', ['alias' => $subService->alias]) }}">{{ $subService->name }}</a>
+                                        <a href="{{ route('service.show', ['alias' => $subService->alias]) }}">{{ $subService->getMenuName() }}</a>
                                     </li>
                                 @endforeach
                             </ul>
