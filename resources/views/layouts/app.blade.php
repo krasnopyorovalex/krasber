@@ -21,7 +21,7 @@
         <div class="sticky__menu{{ is_main_page() ? '' : ' sticky__menu-always' }}">
             <div class="container">
                 <div class="top__line">
-                    <a href="tel:89787248938" class="phone__svg">
+                    <a href="tel:89787547499" class="phone__svg">
                         <svg class="phone">
                             <use xlink:href="{{ asset('img/symbols.svg#phone') }}"></use>
                         </svg>
