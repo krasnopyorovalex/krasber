@@ -3,7 +3,7 @@
     <div class="image__preview">
         <figure>
             <a href="{{ $portfolio->url }}">
-                <img src="{{ $portfolio->image->path }}" alt="{{ $portfolio->image->alt }}" title="{{ $portfolio->image->title }}">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ $portfolio->image->path }}" alt="{{ $portfolio->image->alt }}" title="{{ $portfolio->image->title }}">
             </a>
         </figure>
     </div>
