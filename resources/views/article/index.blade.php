@@ -14,7 +14,7 @@
 
 @section('content')
 
-    @include('layouts.partials.header', ['page' => $article, 'parent' => 'blog', 'name' => 'Блог'])
+    @include('layouts.partials.header', ['page' => $article, 'parent' => 'blog', 'name' => 'Блог', 'schema' => true])
 
     <main>
         <div class="container">
@@ -22,12 +22,14 @@
                 <div class="col-10">
                     <div class="row">
                         <div class="col-8">
-                            <article>
+                            <article itemscope itemtype="http://schema.org/NewsArticle">
                                 <time datetime="{{ $article->published_at->format('c') }}">
                                     {{ $article->published_at->formatLocalized('%d %b %Y') }} г.
                                 </time>
+                                <meta itemprop="identifier" content="{{ $article->id }}">
+                                <meta itemprop="datePublished" content="{{ $article->published_at->format('c') }}" />
 
-                                <div class="content">
+                                <div class="content" itemprop="articleBody">
                                     {!! $article->preview !!}
                                     <figure>
                                         <img src="{{ asset($article->image->path) }}" alt="{{ $article->image->alt }}" title="{{ $article->image->title }}">

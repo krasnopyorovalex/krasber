@@ -19,7 +19,11 @@
                         <meta itemprop="position" content="{{ isset($parent) ? 3 : 2 }}">
                     </li>
                 </ul>
+                @if(isset($schema))
+                <h1 itemprop="headline">{{ $page->name }}</h1>
+                @else
                 <h1>{{ $page->name }}</h1>
+                @endif
             </div>
         </div>
     </div>
