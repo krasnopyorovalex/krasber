@@ -64,4 +64,13 @@ class Page extends Model
     {
         return $this->templates;
     }
+
+    /**
+     * @param $query
+     * @return mixed
+     */
+    public function scopePublish($query)
+    {
+        return $query->where('is_published', '1');
+    }
 }

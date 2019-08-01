@@ -32,14 +32,14 @@ class ShortCodeMiddleware
 
         $content = preg_replace_callback_array(
             [
-                '#(<p(.*)>)?{form}(<\/p>)?#' => function () {
+                '#(<p(.*)>)?{form}(<\/p>)?#' => static function () {
                     return view('layouts.shortcodes.form_order');
                 },
-                '#(<p(.*)>)?{tariffs}(<\/p>)?#' => function () {
+                '#(<p(.*)>)?{tariffs}(<\/p>)?#' => static function () {
                     return view('layouts.shortcodes.tariffs');
                 },
                 '#(<p(.*)>)?{sitemap}(<\/p>)?#' => function () {
-                    $pages = $this->dispatch(new GetAllPagesQuery());
+                    $pages = $this->dispatch(new GetAllPagesQuery(true));
                     $services = $this->dispatch(new GetAllServicesQuery());
                     $articles = $this->dispatch(new GetAllArticlesQuery(true));
                     $portfolios = $this->dispatch(new GetAllPortfoliosQuery());
