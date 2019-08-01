@@ -6,6 +6,7 @@ use App\Domain\Article\Queries\GetAllArticlesQuery;
 use App\Domain\Page\Queries\GetAllPagesQuery;
 use App\Domain\Portfolio\Queries\GetAllPortfoliosQuery;
 use App\Domain\Service\Queries\GetAllServicesQuery;
+use Illuminate\Http\Response;
 
 /**
  * Class SitemapController
@@ -14,11 +15,11 @@ use App\Domain\Service\Queries\GetAllServicesQuery;
 class SitemapController extends Controller
 {
     /**
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
-    public function xml()
+    public function xml(): Response
     {
-        $pages = $this->dispatch(new GetAllPagesQuery());
+        $pages = $this->dispatch(new GetAllPagesQuery(true));
         $services = $this->dispatch(new GetAllServicesQuery());
         $articles = $this->dispatch(new GetAllArticlesQuery(true));
         $portfolios = $this->dispatch(new GetAllPortfoliosQuery());
@@ -29,7 +30,7 @@ class SitemapController extends Controller
                 'articles' => $articles,
                 'services' => $services,
                 'portfolios' => $portfolios
-            ], 200)
+            ])
             ->header('Content-Type', 'text/xml');
     }
 }
