@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Forms\OrderConsultationRequest;
 use App\Http\Requests\Forms\OrderServiceRequest;
 use App\Http\Requests\Forms\OrderTariffRequest;
+use App\Http\Requests\Forms\QuizRequest;
 use App\Http\Requests\Forms\SubscribeRequest;
 use App\Mail\OrderConsultationSent;
 use App\Mail\OrderServiceSent;
 use App\Mail\OrderTariffSent;
+use App\Mail\QuizSent;
 use App\Mail\SubscribeSent;
 use Illuminate\Support\Facades\Mail;
 
@@ -63,6 +65,20 @@ class FormHandlerController extends Controller
     public function subscribe(SubscribeRequest $request): array
     {
         Mail::to(['info@krasber.ru'])->send(new SubscribeSent($request->all()));
+
+        return [
+            'message' => 'Спасибо, что подписались на получение новых материалов!',
+            'status' => 200
+        ];
+    }
+
+    /**
+     * @param QuizRequest $request
+     * @return array
+     */
+    public function quiz(QuizRequest $request): array
+    {
+        Mail::to(['info@krasber.ru'])->send(new QuizSent($request->all()));
 
         return [
             'message' => 'Спасибо, что подписались на получение новых материалов!',

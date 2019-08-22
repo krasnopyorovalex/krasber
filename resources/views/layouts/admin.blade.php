@@ -162,6 +162,7 @@
                     <li>Форма заказа услуги - {form}</li>
                     <li>FAQ - {faq}</li>
                     <li>Прикреплённые портфолио к услуге - {service_portfolios}</li>
+                    <li>Форма-quiz - {quiz}</li>
                 </ul>
             </div>
 

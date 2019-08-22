@@ -19,6 +19,7 @@ Route::post('form/order-service', 'FormHandlerController@orderService')->name('o
 Route::post('form/order-consultation', 'FormHandlerController@orderConsultation')->name('order.consultation.send');
 Route::post('form/order-tariff', 'FormHandlerController@orderTariff')->name('order.tariff.send');
 Route::post('form/subscribe', 'FormHandlerController@subscribe')->name('subscribe.send');
+Route::post('form/quiz', 'FormHandlerController@quiz')->name('quiz.send');
 Route::get('sitemap.xml', 'SitemapController@xml')->name('sitemap.xml');
 //Route::get('krasber.rss', 'RssController@show')->name('rss.show');
 

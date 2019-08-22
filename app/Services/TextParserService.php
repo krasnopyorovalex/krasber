@@ -28,11 +28,14 @@ class TextParserService
 
                     return view('layouts.shortcodes.sub_services', ['service' => $service]);
                 },
-                '#(<p(.*)>)?{faq}(<\/p>)?#' => function () use ($entity) {
+                '#(<p(.*)>)?{faq}(<\/p>)?#' => static function () use ($entity) {
                     return view('layouts.shortcodes.faqs', ['faqs' => $entity->relatedFaqs]);
                 },
-                '#(<p(.*)>)?{service_portfolios}(<\/p>)?#' => function () use ($entity) {
+                '#(<p(.*)>)?{service_portfolios}(<\/p>)?#' => static function () use ($entity) {
                     return view('layouts.shortcodes.service_portfolios', ['portfolios' => $entity->relatedPortfolios]);
+                },
+                '#(<p(.*)>)?{quiz}(<\/p>)?#' => static function () {
+                    return view('layouts.shortcodes.quiz');
                 }
             ],
             $entity->text
