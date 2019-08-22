@@ -81,7 +81,7 @@ class FormHandlerController extends Controller
         Mail::to(['info@krasber.ru'])->send(new QuizSent($request->all()));
 
         return [
-            'message' => 'Спасибо, что подписались на получение новых материалов!',
+            'message' => 'Спасибо! Мы вышлем Вам расчет в течении 12 часов',
             'status' => 200
         ];
     }

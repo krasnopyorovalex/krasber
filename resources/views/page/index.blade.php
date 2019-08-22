@@ -23,14 +23,14 @@
                     <div class="col-5">
                         <div class="slogan__box">
                             <p>{!! $page->slogan !!}</p>
-                            <a href="{{ route('page.show', ['alias' => 'create-site']) }}" class="btn black">Заказать сайт</a>
+                            <a href="{{ route('page.show', ['alias' => 'quiz']) }}" class="btn black">Получить расчет</a>
                         </div>
                         <!-- /.slogan__box -->
                     </div>
                     <div class="col-7">
                         <div class="main__image-top">
                             @if($page->image)
-                            <a href="{{ route('page.show', ['alias' => 'create-site']) }}">
+                            <a href="{{ route('page.show', ['alias' => 'quiz']) }}">
                                 <img src="{{ asset($page->image->path) }}" alt="{{ $page->image->alt }}" title="{{ $page->image->title }}">
                             </a>
                             @endif
