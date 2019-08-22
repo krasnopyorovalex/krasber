@@ -23,7 +23,6 @@ class QuizSent extends Mailable
     public function __construct($data)
     {
         $this->data = $data;
-        dd($data);
     }
 
     /**
