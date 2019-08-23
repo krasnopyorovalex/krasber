@@ -1,5 +1,5 @@
 <div class="steps_form">
-    <form action="{{ route('quiz.send') }}" id="quiz__form">
+    <form action="{{ route('quiz.send') }}" id="quiz__form" onsubmit="yaCounter45495162.reachGoal('QUIZ'); return true">
         @csrf
         <ul class="steps_form-step">
             <li>
