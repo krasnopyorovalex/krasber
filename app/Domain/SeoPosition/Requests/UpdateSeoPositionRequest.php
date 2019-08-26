@@ -13,7 +13,7 @@ class UpdateSeoPositionRequest extends Request
     public function rules(): array
     {
         return [
-            'name' => 'bail|required|max:255',
+            'domain' => 'bail|required|max:64',
             'image' => 'image',
             'imageAlt' => 'string|max:255',
             'imageTitle' => 'string|max:255'
