@@ -97,13 +97,13 @@ CodeMirror.defineMode("puppet", function () {
       if (stream.match(/(\s+)?[\w:_]+(\s+)?/)) {
         return 'def';
       }
-      // Match the rest it the next time around
+      // SeoPositionItem the rest it the next time around
       stream.match(/\s+{/);
       state.inDefinition = false;
     }
     // Are we in an 'include' statement?
     if (state.inInclude) {
-      // Match and return the included class
+      // SeoPositionItem and return the included class
       stream.match(/(\s+)?\S+(\s+)?/);
       state.inInclude = false;
       return 'def';
@@ -140,7 +140,7 @@ CodeMirror.defineMode("puppet", function () {
     if (/(\s+)?[A-Z]/.test(word)) {
       // Negate the next()
       stream.backUp(1);
-      // Match the full reference
+      // SeoPositionItem the full reference
       stream.match(/(\s+)?[A-Z][\w:_]+/);
       return 'def';
     }
@@ -154,7 +154,7 @@ CodeMirror.defineMode("puppet", function () {
       stream.match(/(\s+)?[@]{1,2}/);
       return 'special';
     }
-    // Match all the comments. All of them.
+    // SeoPositionItem all the comments. All of them.
     if (ch == "#") {
       stream.skipToEnd();
       return "comment";
@@ -166,22 +166,22 @@ CodeMirror.defineMode("puppet", function () {
       // Perform the looping function to find the end
       return tokenString(stream, state);
     }
-    // Match all the brackets
+    // SeoPositionItem all the brackets
     if (ch == '{' || ch == '}') {
       return 'bracket';
     }
-    // Match characters that we are going to assume
+    // SeoPositionItem characters that we are going to assume
     // are trying to be regex
     if (ch == '/') {
       stream.match(/.*\//);
       return 'variable-3';
     }
-    // Match all the numbers
+    // SeoPositionItem all the numbers
     if (ch.match(/[0-9]/)) {
       stream.eatWhile(/[0-9]+/);
       return 'number';
     }
-    // Match the '=' and '=>' operators
+    // SeoPositionItem the '=' and '=>' operators
     if (ch == '=') {
       if (stream.peek() == '>') {
           stream.next();

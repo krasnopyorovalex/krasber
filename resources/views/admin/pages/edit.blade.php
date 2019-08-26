@@ -31,7 +31,7 @@
                                 <label for="template">Шаблон страницы:</label>
                                 <select class="form-control border-blue border-xs select-search" id="template" name="template" data-width="100%">
                                     @foreach ($page->getTemplates() as $key => $value)
-                                        <option value="{{ $key }}" {{ $key == $page->template ? 'selected' : '' }}>{{ $value }}</option>
+                                        <option value="{{ $key }}" {{ $key === $page->template ? 'selected' : '' }}>{{ $value }}</option>
                                     @endforeach
                                 </select>
                             </div>

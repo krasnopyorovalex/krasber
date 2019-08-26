@@ -137,7 +137,7 @@ CodeMirror.defineMode("sass", function(config) {
     if (ch === "."){
       stream.next();
 
-      // Match class selectors
+      // SeoPositionItem class selectors
       if (stream.match(/^[\w-]+/)){
         indent(state);
         return "atom";
@@ -214,7 +214,7 @@ CodeMirror.defineMode("sass", function(config) {
     if (ch === "="){
       stream.next();
 
-      // Match shortcut mixin definition
+      // SeoPositionItem shortcut mixin definition
       if (stream.match(/^[\w-]+/)){
         indent(state);
         return "meta";
@@ -226,7 +226,7 @@ CodeMirror.defineMode("sass", function(config) {
     if (ch === "+"){
       stream.next();
 
-      // Match shortcut mixin definition
+      // SeoPositionItem shortcut mixin definition
       if (stream.match(/^[\w-]+/)){
         return "variable-3";
       }else {

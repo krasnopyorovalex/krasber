@@ -49,7 +49,7 @@
     if (stream.match(/\$[a-zA-Z_][a-zA-Z0-9_]*/)) {
       // After the variable name there may appear array or object operator.
       if (stream.match("[", false)) {
-        // Match array operator
+        // SeoPositionItem array operator
         state.tokenize = matchSequence([
           [["[", null]],
           [[/\d[\w\.]*/, "number"],
@@ -59,7 +59,7 @@
         ]);
       }
       if (stream.match(/\-\>\w/, false)) {
-        // Match object operator
+        // SeoPositionItem object operator
         state.tokenize = matchSequence([
           [["->", null]],
           [[/[\w]+/, "variable"]]

@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Domain\SeoPosition\Queries\GetAllSeoPositionsQuery;
 use App\Domain\Service\Queries\GetAllServicesQuery;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -36,6 +37,11 @@ class TextParserService
                 },
                 '#(<p(.*)>)?{quiz}(<\/p>)?#' => static function () {
                     return view('layouts.shortcodes.quiz');
+                },
+                '#(<p(.*)>)?{seo}(<\/p>)?#' => function () {
+                    $seoPositions = $this->dispatch(new GetAllSeoPositionsQuery());
+
+                    return view('layouts.shortcodes.seo_positions', ['seoPositions' => $seoPositions]);
                 }
             ],
             $entity->text

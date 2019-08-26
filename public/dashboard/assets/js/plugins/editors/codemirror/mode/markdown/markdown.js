@@ -608,7 +608,7 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
     if(stream.eatSpace()){
       return null;
     }
-    // Match URL
+    // SeoPositionItem URL
     stream.match(/^[^\s]+/, true);
     // Check for link title
     if (stream.peek() === undefined) { // End of line, set flag to check next line
@@ -625,7 +625,7 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
     if (!savedInlineRE[endChar]) {
       // Escape endChar for RegExp (taken from http://stackoverflow.com/a/494122/526741)
       endChar = (endChar+'').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
-      // Match any non-endChar, escaped character, as well as the closing
+      // SeoPositionItem any non-endChar, escaped character, as well as the closing
       // endChar.
       savedInlineRE[endChar] = new RegExp('^(?:[^\\\\]|\\\\.)*?(' + endChar + ')');
     }
