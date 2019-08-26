@@ -3,7 +3,7 @@
     @foreach($seoPositions as $seoPosition)
     <div class="seo_positions-item">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 as__center">
                 <div class="logo">
                     @if($seoPosition->image)
                     <img src="{{ $seoPosition->image->path }}" alt="{{ $seoPosition->image->alt }}" title="{{ $seoPosition->image->title }}">
