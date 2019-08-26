@@ -1,26 +1,26 @@
 @extends('layouts.admin')
 
 @section('breadcrumb')
-    <li><a href="{{ route('admin.championships.index') }}">Чемпионаты</a></li>
-    <li class="active">Форма редактирования чемпионата</li>
+    <li><a href="{{ route('admin.seo_positions.index') }}">Seo-позиции</a></li>
+    <li class="active">Форма редактирования seo-позиции</li>
 @endsection
 
 @section('content')
 
     <div class="panel panel-default">
-        <div class="panel-heading">Форма редактирования чемпионата</div>
+        <div class="panel-heading">Форма редактирования seo-позиции</div>
 
         <div class="panel-body">
 
             @include('layouts.partials.errors')
 
-            <form action="{{ route('admin.championships.update', ['id' => $seoPosition->id]) }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('admin.seo_positions.update', ['id' => $seoPosition->id]) }}" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('put')
 
                 <div class="row">
                     <div class="col-md-12">
-                        @input(['name' => 'name', 'label' => 'Название', 'entity' => $seoPosition])
+                        @input(['name' => 'domain', 'label' => 'Название', 'entity' => $seoPosition])
                     </div>
                 </div>
 
