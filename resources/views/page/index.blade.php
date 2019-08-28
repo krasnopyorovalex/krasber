@@ -167,6 +167,7 @@
                         </div>
                         <div class="we__work-list-item">
                             <img src="{{ asset('img/laravel-framework.svg') }}" alt="Laravel framework" title="Laravel фреймворк">
+                            <img src="{{ asset('img/logotype.min.svg') }}" alt="Laravel framework" title="Laravel фреймворк">
                         </div>
                         <div class="we__work-list-item">
                             <img src="{{ asset('img/yii-framework.svg') }}" alt="Yii framework" title="Yii фреймворк">
