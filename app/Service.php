@@ -36,6 +36,9 @@ class Service extends Model
         'domain_hosting' => 'Регистрация домена',
         'hosting' => 'Хостинг',
         'usable_audit' => 'Юзабили аудит',
+        'html-coding' => 'Вёрстка дизайна',
+        'copywriter' => 'SEO-копирайтинг',
+        'module' => 'Дополнительный модуль'
     ];
 
     /**

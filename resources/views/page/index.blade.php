@@ -23,7 +23,7 @@
                     <div class="col-5">
                         <div class="slogan__box">
                             <p>{!! $page->slogan !!}</p>
-                            <a href="{{ route('page.show', ['alias' => 'quiz']) }}" class="btn black">Получить расчет</a>
+                            <a href="{{ route('page.show', ['alias' => 'quiz']) }}" class="btn black">Получить расчёт</a>
                         </div>
                         <!-- /.slogan__box -->
                     </div>
