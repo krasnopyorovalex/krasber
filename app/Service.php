@@ -38,7 +38,8 @@ class Service extends Model
         'usable_audit' => 'Юзабили аудит',
         'html-coding' => 'Вёрстка дизайна',
         'copywriter' => 'SEO-копирайтинг',
-        'module' => 'Дополнительный модуль'
+        'module' => 'Дополнительный модуль',
+        'adwords' => 'Google adwords'
     ];
 
     /**
