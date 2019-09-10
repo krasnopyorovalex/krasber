@@ -71,6 +71,11 @@
 {{--                                        <use xlink:href="{{ asset('img/symbols.svg#telegram') }}"></use>--}}
 {{--                                    </svg>--}}
 {{--                                </a>--}}
+                                <a href="https://wa.me/89787547499" target="_blank">
+                                    <svg class="icon whatsapp">
+                                        <use xlink:href="{{ asset('img/symbols.svg#whatsapp') }}"></use>
+                                    </svg>
+                                </a>
                                 <a href="viber://add?number=89787547499" target="_blank">
                                     <svg class="icon viber">
                                         <use xlink:href="{{ asset('img/symbols.svg#viber') }}"></use>
