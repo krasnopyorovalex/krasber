@@ -21,7 +21,7 @@
         <div class="sticky__menu{{ is_main_page() ? '' : ' sticky__menu-always' }}">
             <div class="container">
                 <div class="top__line">
-                    <a href="tel:89787547499" class="phone__svg">
+                    <a href="tel:79787547499" class="phone__svg">
                         <svg class="phone">
                             <use xlink:href="{{ asset('img/symbols.svg#phone') }}"></use>
                         </svg>
@@ -39,7 +39,7 @@
                     </svg>
                     <div class="phone__email">
                         <a href="tel:89787547499" title="Позвонить" class="phone__link">
-                            <span>8 (978) 754-74-99</span>
+                            <span>+7 (978) 754-74-99</span>
                         </a>
                         <a href="mailto:info@krasber.ru" title="Написать на почту">info@krasber.ru</a>
                     </div>
@@ -63,7 +63,7 @@
                             Звоните, пишите, договоримся!
                         </div>
                         <div class="col-6 footer__contacts-messengers">
-                            <div class="phone"><a href="tel:89787547499" title="Позвонить">8 (978) 754-74-99</a></div>
+                            <div class="phone"><a href="tel:79787547499" title="Позвонить">+7 (978) 754-74-99</a></div>
                             <div class="email"><a href="mailto:info@krasber.ru" title="Написать на почту">info@krasber.ru</a></div>
                             <div class="f__icons">
 {{--                                <a href="https://t.me/nata_105" target="_blank" rel="noopener noreferrer">--}}
