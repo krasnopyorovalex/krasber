@@ -23,7 +23,7 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($services as $service)
+            @foreach($adminServices as $service)
                 @include('admin.services._tr', ['service' => $service, 'prefix' => '', 'child' => false])
                 @if ($service->services)
                     @foreach($service->services as $service)

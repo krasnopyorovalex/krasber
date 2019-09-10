@@ -27,10 +27,10 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $services = $this->dispatch(new GetAllServicesQuery());
+        $adminServices = $this->dispatch(new GetAllServicesQuery());
 
         return view('admin.services.index', [
-            'services' => $services
+            'adminServices' => $adminServices
         ]);
     }
 
