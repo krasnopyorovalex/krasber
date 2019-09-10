@@ -38,7 +38,7 @@
                         <use xlink:href="{{ asset('img/symbols.svg#menu') }}"></use>
                     </svg>
                     <div class="phone__email">
-                        <a href="tel:89787547499" title="Позвонить" class="phone__link">
+                        <a href="tel:79787547499" title="Позвонить" class="phone__link">
                             <span>+7 (978) 754-74-99</span>
                         </a>
                         <a href="mailto:info@krasber.ru" title="Написать на почту">info@krasber.ru</a>
