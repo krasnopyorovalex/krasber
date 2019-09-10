@@ -29,6 +29,9 @@ class GetServiceByAliasQuery
      */
     public function handle()
     {
-        return Service::where('alias', $this->alias)->with(['relatedServices', 'relatedFaqs'])->firstOrFail();
+        return Service::where('alias', $this->alias)
+            ->where('is_published', '1')
+            ->with(['relatedServices', 'relatedFaqs'])
+            ->firstOrFail();
     }
 }

@@ -43,10 +43,10 @@ class PageController extends Controller
      */
     public function show(string $alias = 'index')
     {
-        try {
-            /** @var $page Page*/
-            $page = $this->dispatch(new GetPageByAliasQuery($alias));
+        /** @var $page Page*/
+        $page = $this->dispatch(new GetPageByAliasQuery($alias));
 
+        try {
             $page = $this->canonicalService->check($page);
             $page->text = $this->parserService->parse($page);
 

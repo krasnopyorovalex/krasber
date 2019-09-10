@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Domain\Article\Queries\GetAllArticlesQuery;
 use App\Domain\Page\Queries\GetAllPagesQuery;
 use App\Domain\Portfolio\Queries\GetAllPortfoliosQuery;
-use App\Domain\Service\Queries\GetAllServicesQuery;
+use App\Domain\Service\Queries\GetAllPublishedServicesQuery;
 use Illuminate\Http\Response;
 
 /**
@@ -20,7 +20,7 @@ class SitemapController extends Controller
     public function xml(): Response
     {
         $pages = $this->dispatch(new GetAllPagesQuery(true));
-        $services = $this->dispatch(new GetAllServicesQuery());
+        $services = $this->dispatch(new GetAllPublishedServicesQuery());
         $articles = $this->dispatch(new GetAllArticlesQuery(true));
         $portfolios = $this->dispatch(new GetAllPortfoliosQuery());
 

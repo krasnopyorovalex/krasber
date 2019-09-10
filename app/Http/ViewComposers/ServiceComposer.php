@@ -2,7 +2,7 @@
 
 namespace App\Http\ViewComposers;
 
-use App\Domain\Service\Queries\GetAllServicesQuery;
+use App\Domain\Service\Queries\GetAllPublishedServicesQuery;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 
@@ -17,9 +17,9 @@ class ServiceComposer
     /**
      * @param View $view
      */
-    public function compose(View $view)
+    public function compose(View $view): void
     {
-        $services = $this->dispatch(new GetAllServicesQuery());
+        $services = $this->dispatch(new GetAllPublishedServicesQuery());
 
         $view->with('services', $services);
     }
