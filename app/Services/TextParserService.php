@@ -24,10 +24,14 @@ class TextParserService
         return preg_replace_callback_array(
             [
                 '#(<p(.*)>)?{services}(<\/p>)?#' => function () use ($entity) {
-                    $services = $this->dispatch(new GetAllServicesQuery());
+                    $services = $this->dispatch(new GetAllServicesQuery(null));
                     $service = $services->firstWhere('id', '=', $entity->id);
 
-                    return view('layouts.shortcodes.sub_services', ['service' => $service]);
+                    $subServices = $service->services->filter(static function ($item) {
+                        return (bool)$item->is_published;
+                    });
+
+                    return view('layouts.shortcodes.sub_services', ['service' => $service, 'subServices' => $subServices]);
                 },
                 '#(<p(.*)>)?{faq}(<\/p>)?#' => static function () use ($entity) {
                     return view('layouts.shortcodes.faqs', ['faqs' => $entity->relatedFaqs]);

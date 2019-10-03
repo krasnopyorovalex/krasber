@@ -11,7 +11,7 @@
                 <div class="as__h1">{{ $service->title_block }}</div>
 
                 <div class="list__items">
-                    @foreach ($service->services as $service)
+                    @foreach ($subServices as $service)
                         <div class="list__items-item2">
                             <div class="row">
                                 <div class="col-4">
