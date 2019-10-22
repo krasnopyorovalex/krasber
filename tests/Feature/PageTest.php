@@ -1,9 +1,16 @@
 <?php
+
 namespace Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use App\Article;
+use App\Page;
 
+/**
+ * Class PageTest
+ * @package Tests\Feature
+ */
 class PageTest extends TestCase
 {
     use DatabaseMigrations;
@@ -11,35 +18,35 @@ class PageTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        factory('App\Page')->create();
-        factory('App\Page')->create(['alias' => 'blog', 'template' => 'page.blog']);
+        factory(Page::class)->create();
+        factory(Page::class)->create(['alias' => 'blog', 'template' => 'page.blog']);
     }
 
     /** @test */
-    public function see_main_page()
+    public function see_main_page(): void
     {
         $this->get('/')
             ->assertStatus(200);
     }
 
     /** @test */
-    public function not_found_page()
+    public function not_found_page(): void
     {
         $this->get('/not-page')
             ->assertStatus(404);
     }
 
     /** @test */
-    public function see_blog_page()
+    public function see_blog_page(): void
     {
         $this->get('/blog')
             ->assertStatus(200);
     }
 
     /** @test */
-    public function create_new_article()
+    public function create_new_article(): void
     {
-        $article = factory('App\Article')->create();
+        $article = factory(Article::class)->create();
 
         $this->get('/blog')
             ->assertSee($article->preview)

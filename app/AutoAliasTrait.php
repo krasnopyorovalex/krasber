@@ -2,7 +2,12 @@
 
 namespace App;
 
+use Illuminate\Support\Str;
 
+/**
+ * Trait AutoAliasTrait
+ * @package App
+ */
 trait AutoAliasTrait
 {
     /**
@@ -10,6 +15,6 @@ trait AutoAliasTrait
      */
     public function setAliasAttribute(string $value): void
     {
-        $this->attributes['alias'] = str_slug($value);
+        $this->attributes['alias'] = Str::slug($value);
     }
 }

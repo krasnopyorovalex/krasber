@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Domain\Article\Queries\GetArticleByAliasQuery;
 use App\Domain\Article\Queries\GetAdjoiningArticleQuery;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\View\View;
 
 /**
  * Class BlogController
@@ -13,7 +15,7 @@ class BlogController extends Controller
 {
     /**
      * @param string $alias
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @return Factory|View
      */
     public function show(string $alias)
     {

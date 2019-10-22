@@ -5,6 +5,10 @@ namespace App\Domain\Article\DTO;
 use App\Article;
 use Illuminate\Database\Eloquent\Collection;
 
+/**
+ * Class AdjoiningResult
+ * @package App\Domain\Article\DTO
+ */
 class AdjoiningResult
 {
     /**
@@ -27,7 +31,7 @@ class AdjoiningResult
      */
     public function nextOrFirst(Article $article)
     {
-        return $this->collection->first(function ($value, $key) use ($article) {
+        return $this->collection->first(static function ($value) use ($article) {
             return $value->published_at < $article->published_at;
         }) ?: $this->collection->first();
     }
@@ -38,7 +42,7 @@ class AdjoiningResult
      */
     public function prevOrLast(Article $article)
     {
-        return $this->collection->last(function ($value, $key) use ($article) {
+        return $this->collection->last(static function ($value) use ($article) {
             return $value->published_at > $article->published_at;
         }) ?: $this->collection->last();
     }

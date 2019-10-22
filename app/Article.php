@@ -2,7 +2,10 @@
 
 namespace App;
 
+use Eloquent;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
+use Illuminate\Support\Carbon;
 
 /**
  * App\Article
@@ -15,15 +18,16 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $preview
  * @property string $alias
  * @property string $is_published
- * @property \Illuminate\Support\Carbon $published_at
- * @property-read \App\Image $image
- * @mixin \Eloquent
+ * @property Carbon $published_at
+ * @property-read Image $image
+ * @mixin Eloquent
  */
 class Article extends Model
 {
     use AutoAliasTrait;
 
     public $timestamps = false;
+
     /**
      * The attributes that should be mutated to dates.
      *
@@ -32,24 +36,25 @@ class Article extends Model
     protected $dates = [
         'published_at'
     ];
+
     /**
      * @var array
      */
     protected $guarded = [];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\MorphOne
+     * @return MorphOne
      */
-    public function image()
+    public function image(): MorphOne
     {
-        return $this->morphOne('App\Image', 'imageable');
+        return $this->morphOne(Image::class, 'imageable');
     }
 
     /**
      * @return string
      */
-    public function getUrlAttribute()
+    public function getUrlAttribute(): string
     {
-        return route("article.show", $this->alias);
+        return route('article.show', $this->alias);
     }
 }

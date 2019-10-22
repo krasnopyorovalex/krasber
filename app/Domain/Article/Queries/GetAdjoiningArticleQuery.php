@@ -14,7 +14,7 @@ class GetAdjoiningArticleQuery
     /**
      * @return AdjoiningResult
      */
-    public function handle()
+    public function handle(): AdjoiningResult
     {
         return new AdjoiningResult(Article::orderByDesc('published_at')->get());
     }
