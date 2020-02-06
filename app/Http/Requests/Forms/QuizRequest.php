@@ -14,7 +14,7 @@ class QuizRequest extends Request
     {
         return [
             'email' => 'required|email',
-            'name' => 'required|min:3',
+            'name' => 'required|min:3|max:40',
             'phone' => 'string|nullable'
         ];
     }
