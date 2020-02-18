@@ -1,7 +1,7 @@
 {
     "name": "laravel/laravel",
     "description": "Krasber digital agency.",
-    "keywords": ["framework", "laravel"],
+    "keywords": ["digital agency", "krasber"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -55,8 +55,8 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan ide-helper:generate",
-            "php artisan ide-helper:meta"
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta"
         ]
     },
     "config": {
