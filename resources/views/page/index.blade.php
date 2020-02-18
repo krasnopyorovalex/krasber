@@ -107,7 +107,7 @@
                                 <use xlink:href="{{ asset('img/symbols.svg#konsultaciya') }}"></use>
                             </svg>
                             <div class="separator"></div>
-                            <div class="desc">Бесплатные консультации и информационная поддержка спец. на всех этапах работы</div>
+                            <div class="desc">Бесплатные консультации и информационная поддержка специалиста на всех этапах работы</div>
                         </div>
                         <div class="why__we-list-item">
                             <svg class="icon podhod">
