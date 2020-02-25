@@ -9,7 +9,7 @@
 @if ($service->image)
     <meta property="og:image" content="{{ asset(str_replace('.svg', '.jpg', $service->image->path)) }}">
 @else
-    <meta property="og:image" content="{{ asset('img/logo_green.jpg') }}">
+    <meta property="og:image" content="{{ asset('img/visitka.png') }}">
 @endif
     <meta property="og:description" content="{{ $service->description }}">
     <meta property="og:site_name" content="Веб-студия Красбер в Симферополе и Крыму">
