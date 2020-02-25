@@ -8,6 +8,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request()->getUri() }}">
     <meta property="og:image" content="{{ asset('img/visitka.png') }}">
+    <meta property="og:image:width" content="529" />
+    <meta property="og:image:height" content="243" />
     <meta property="og:description" content="{{ $page->description }}">
     <meta property="og:site_name" content="Веб-студия Красбер в Симферополе и Крыму">
     <meta property="og:locale" content="ru_RU">
