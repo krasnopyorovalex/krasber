@@ -25,7 +25,7 @@
             <input type="email" name="email" placeholder="Email" autocomplete="off" required>
         </div>
         <div class="single__block submit__block">
-            <button type="submit">Отправить</button>
+            <button type="submit" class="btn">Отправить</button>
         </div>
         <div class="single__block agree__block">
             <input type="checkbox" name="agree" id="i_agree{{ $postfix ?? '' }}" value="1" checked>

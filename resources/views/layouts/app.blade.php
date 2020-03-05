@@ -132,7 +132,7 @@
                         </div>
                         @foreach ($services as $service)
                             <div class="col__service">
-                                <div class="title">{!! str_replace(' ', '<br />', $service->getMenuName()) !!}</div>
+                                <div class="title">{{ $service->getMenuName() }}</div>
                                 @if ($service->services->count())
                                     <ul>
                                         @foreach ($service->services as $subService)

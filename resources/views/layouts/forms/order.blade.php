@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-7">
                 <div class="as__h1">{{ $form_title ?? 'Заказать сайт' }}</div>
-                <div class="sub__title">{{ $form_sub_title ?? 'Вы можете бесплатно  получить аудит вашего сайта. Вас это не к чему не обязывает.' }}</div>
+                <div class="sub__title">{{ $form_sub_title ?? 'Вы можете бесплатно  получить аудит вашего сайта.<br /> Вас это не к чему не обязывает.' }}</div>
 
                 <form action="{{ route('order.consultation.send') }}" method="post" id="order__consultation-form" onsubmit="yaCounter45495162.reachGoal('KONSULTACIA'); return true">
                     @csrf
@@ -25,7 +25,7 @@
                         <p class="error">Согласитесь на обработку персональных данных</p>
                     </div>
                     <div class="single__block submit__block">
-                        <button type="submit">{{ $btn_text ?? 'Отправить' }}</button>
+                        <button type="submit" class="btn">{{ $btn_text ?? 'Отправить' }}</button>
                     </div>
                 </form>
             </div>

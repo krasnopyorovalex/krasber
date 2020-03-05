@@ -207,7 +207,7 @@
                             <label for="i_agree_quiz">Отправляя заяявку  вы соглашаетесь с <a href="#" title="Перейти на страницу описания">правилами офферты</a></label>
                         </div>
                         <div class="single_block submit__block">
-                            <button type="submit">Отправить</button>
+                            <button type="submit" class="btn">Отправить</button>
                         </div>
                     </div>
                 </div>
