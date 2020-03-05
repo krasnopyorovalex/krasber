@@ -74,5 +74,5 @@
         </div>
     </section>
     @endif
-    @include('layouts.forms.subscribe')
+{{--    @include('layouts.forms.subscribe')--}}
 @endsection
