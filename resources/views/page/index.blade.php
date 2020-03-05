@@ -66,7 +66,7 @@
                         <div class="wrap">
                             <div class="desc">
                                 <div class="as__h1">Заказать услугу</div>
-                                <p>Вы можете бесплатно  получить аудит вашего сайта. Вас это не к чему не обязывает.</p>
+                                <p>Вы можете бесплатно  получить аудит вашего сайта.<br />Вас это ни к чему не обязывает.</p>
                             </div>
                             @include('layouts.forms.order_service', ['services' => $services])
                         </div>
@@ -212,7 +212,7 @@
                         <div class="wrap">
                             <div class="desc">
                                 <div class="as__h1">Заказать услугу</div>
-                                <p>Вы можете бесплатно  получить аудит вашего сайта. Вас это не к чему не обязывает.</p>
+                                <p>Вы можете бесплатно  получить аудит вашего сайта.<br /> Вас это ни к чему не обязывает.</p>
                             </div>
                             @include('layouts.forms.order_service', ['services' => $services, 'postfix' => '_bottom'])
                         </div>
