@@ -21,7 +21,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                    {!! $page->text !!}
                 </div>
             </div>
@@ -32,7 +32,7 @@
     <section itemscope="" itemtype="http://schema.org/BlogPosting" itemprop="BlogPost" class="articles__list">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     @foreach ($articles as $article)
                         <article>
                             @if ($article->image)
@@ -48,12 +48,20 @@
                             </div>
                             @endif
                             <div itemprop="articleBody" class="preview">
-                                <time itemprop="datePublished" datetime="{{ $article->published_at->format('c') }}">
-                                    {{ $article->published_at->formatLocalized('%d %b %Y') }} г.
-                                </time>
-                                <a itemprop="headline" href="{{ $article->url }}" class="name">{{ $article->name }}</a>
+                                <a href="{{ $article->url }}" class="name">{{ $article->name }}</a>
                                 {!! $article->preview !!}
-                                <a href="{{ $article->url }}" class="btn_style-two">читать подробнее</a>
+                                <div class="row ai_center">
+                                    <div class="col-6">
+                                        <a href="{{ $article->url }}" class="btn black">читать подробнее</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="time-box">
+                                            <time itemprop="datePublished" datetime="{{ $article->published_at->format('c') }}">
+                                                {{ $article->published_at->formatLocalized('%d %b %Y') }} г.
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </article>
                     @endforeach

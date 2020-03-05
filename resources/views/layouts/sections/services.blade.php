@@ -1,12 +1,12 @@
 <section class="services">
     <div class="container">
         <div class="row">
-            <div class="col-10">
+            <div class="col-12">
                 <h2 class="as__h1">Наши услуги</h2>
 
                 <div class="services__list">
                     @foreach ($services as $service)
-                    <div class="services__list-item{{ $loop->index == 0 ? ' is__open' : '' }}">
+                    <div class="services__list-item{{ $loop->index === 0 ? ' is__open' : '' }}">
                         <a href="{{ route('service.show', $service->alias) }}" class="name">{{ $service->getMenuName() }}</a>
                         <svg class="icon arrow_down">
                             <use xlink:href="{{ asset('img/symbols.svg#arrow_down') }}"></use>
@@ -23,7 +23,7 @@
                             </ul>
                             @endif
                             <div class="btn__more">
-                                <a href="{{ route('service.show', $service->alias) }}" class="btn green">ПОДРОБНЕЕ</a>
+                                <a href="{{ route('service.show', $service->alias) }}" class="btn">ПОДРОБНЕЕ</a>
                             </div>
                         </div>
                     </div>

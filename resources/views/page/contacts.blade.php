@@ -19,12 +19,12 @@
         <div class="bg__box"></div>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12 blue">
                     <div class="contact__form">
                         <div class="wrap">
                             <div class="desc">
                                 <div class="as__h1">Заказать услугу</div>
-                                <p>Вы можете бесплатно  получить аудит вашего сайта. Вас это не к чему не обязывает.</p>
+                                <p>Вы можете бесплатно  получить аудит вашего сайта. <br >Вас это ни к чему не обязывает.</p>
                             </div>
                             @include('layouts.forms.order_service', ['services' => $services])
                         </div>
@@ -37,7 +37,7 @@
     <section class="breadcrumbs">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
                         <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
                             <a href="{{ route('page.show') }}">Главная</a>
@@ -56,7 +56,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <h1>{{ $page->name }}</h1>
                     {!! $page->text !!}
                 </div>

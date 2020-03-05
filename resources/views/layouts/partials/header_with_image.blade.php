@@ -2,7 +2,7 @@
     <div class="bg__box"></div>
     <div class="container">
         <div class="row">
-            <div class="body col-10 green">
+            <div class="body col-12 blue">
                 <div class="row">
                     <div class="col-7">
                         <div class="text">
@@ -26,7 +26,7 @@
 <section class="breadcrumbs">
     <div class="container">
         <div class="row">
-            <div class="col-10">
+            <div class="col-12">
                 <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
                     <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
                         <a href="{{ route('page.show') }}">Главная</a>

@@ -24,7 +24,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <div class="filter__categories">
                         <ul>
                             <li class="active" data-filter="portfolio__list-item">все</li>
@@ -46,7 +46,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <div class="portfolio__list">
                         @foreach ($portfolios as $portfolio)
                             @include('layouts.partials._portfolio_item', ['portfolio' => $portfolio])

@@ -26,13 +26,8 @@
             @endif
             <div class="link__more">
                 <div class="link__more-text">
-                    <a href="{{ $portfolio->url }}">ПОДРОБНЕЕ</a>
+                    <a href="{{ $portfolio->url }}" class="btn white">ПОДРОБНЕЕ</a>
                 </div>
-                <a href="{{ $portfolio->url }}" class="link__more-icon">
-                    <svg class="icon link">
-                        <use xlink:href="./img/symbols.svg#link"></use>
-                    </svg>
-                </a>
             </div>
         </div>
     </div>

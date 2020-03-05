@@ -2,7 +2,7 @@
     <div class="bg__box"></div>
     <div class="container">
         <div class="row">
-            <div class="col-10">
+            <div class="col-12">
                 <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
                     <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
                         <a href="{{ route('page.show') }}">Главная</a>

@@ -109,7 +109,7 @@ class Service extends Model
     public function getPrice(): string
     {
         return $this->price
-            ? sprintf('от %s р.', number_format($this->price, 0, '.', ' '))
+            ? sprintf('от <span>%s</span> р.', number_format($this->price, 0, '.', ' '))
             : 'Бесплатно';
     }
 

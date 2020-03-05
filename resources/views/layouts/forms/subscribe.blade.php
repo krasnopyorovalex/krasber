@@ -1,7 +1,7 @@
 <section class="subscribe">
     <div class="container">
         <div class="row">
-            <div class="col-10">
+            <div class="col-12">
                 <div class="subscribe__box grey">
                     <div class="title">Подпишитесь и узнавайте о самых интересных материалах на KRASBER</div>
                     <form action="{{route('subscribe.send')}}" class="subscribe" id="subscribe__form" method="post" onsubmit="yaCounter45495162.reachGoal('PODPISKA'); return true">
@@ -15,7 +15,7 @@
                             </div>
                         </div>
                         <div class="single__block submit__block">
-                            <button type="submit">ПОДПИСАТЬСЯ</button>
+                            <button type="submit" class="btn">ПОДПИСАТЬСЯ</button>
                         </div>
                     </form>
                 </div>

@@ -20,7 +20,7 @@
     <section class="tags">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <div class="tags black">
                         @foreach ($portfolio->tags as $tag)
                             <span>{{ $tag }}</span>
@@ -35,7 +35,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                    {!! $portfolio->text !!}
                 </div>
             </div>
@@ -46,7 +46,7 @@
     <section class="grey">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <div class="btn__link-project">
                         {{ $portfolio->site_url }}
                     </div>
@@ -59,7 +59,7 @@
     <section class="portfolio__nav">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <div class="row">
                         <div class="col-only-6 center">
                             @if ($prev)

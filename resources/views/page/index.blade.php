@@ -16,16 +16,19 @@
 @section('slogan')
     <div class="container">
         <div class="row">
-            <div class="col-10">
+            <div class="col-12">
                 <div class="row align__items-center">
-                    <div class="col-5">
+                    <div class="col-6">
                         <div class="slogan__box">
-                            <p>{!! $page->slogan !!}</p>
-                            <a href="{{ route('page.show', ['alias' => 'quiz']) }}" class="btn black">Получить расчёт</a>
+                            <div class="slogan__box">
+                                <p>{!! $page->slogan !!}</p>
+                                <span>Сделаем сайт для Вашего<br />бизнеса за 7 рабочих дней.<br />Домен в подарок!</span>
+                                <a href="{{ route('page.show', ['alias' => 'quiz']) }}" class="btn white">Рассчитать стоимость сайта</a>
+                            </div>
                         </div>
                         <!-- /.slogan__box -->
                     </div>
-                    <div class="col-7">
+                    <div class="col-6">
                         <div class="main__image-top">
                             @if($page->image)
                             <a href="{{ route('page.show', ['alias' => 'quiz']) }}">
@@ -45,7 +48,7 @@
     <section class="main__text">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <h1>{{ $page->name }}</h1>
                     {!! $page->text !!}
                 </div>
@@ -58,7 +61,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <div class="order__service-form">
                         <div class="wrap">
                             <div class="desc">
@@ -76,49 +79,31 @@
     <section class="why__we">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <h2 class="as__h1">Несколько фактов о нас</h2>
                     <div class="why__we-list">
                         <div class="why__we-list-item">
-                            <svg class="icon opit_v_razrabotke">
-                                <use xlink:href="{{ asset('img/symbols.svg#opit_v_razrabotke') }}"></use>
-                            </svg>
-                            <div class="separator"></div>
-                            <div class="desc">Опыт в разработке сайтов более 5 лет</div>
+                            <div class="step">01</div>
+                            <div class="desc">Опыт в разработке продающих сайтов более 5 лет любой сложности</div>
                         </div>
                         <div class="why__we-list-item">
-                            <svg class="icon opit">
-                                <use xlink:href="{{ asset('img/symbols.svg#opit') }}"></use>
-                            </svg>
-                            <div class="separator"></div>
-                            <div class="desc">Опыт в интернет-рекламе более 3 лет</div>
+                            <div class="step">02</div>
+                            <div class="desc">Опыт в интернет-маркетинге и контекстной рекламе более 3 лет</div>
                         </div>
                         <div class="why__we-list-item">
-                            <svg class="icon sertifikat">
-                                <use xlink:href="{{ asset('img/symbols.svg#sertifikat') }}"></use>
-                            </svg>
-                            <div class="separator"></div>
+                            <div class="step">03</div>
                             <div class="desc">Сертифицированные специалисты Яндекс.Директ и Google.Adwords</div>
                         </div>
                         <div class="why__we-list-item">
-                            <svg class="icon konsultaciya">
-                                <use xlink:href="{{ asset('img/symbols.svg#konsultaciya') }}"></use>
-                            </svg>
-                            <div class="separator"></div>
-                            <div class="desc">Бесплатные консультации и информационная поддержка специалиста на всех этапах работы</div>
+                            <div class="step">04</div>
+                            <div class="desc">Бесплатная информационная поддержка на всех этапах работы</div>
                         </div>
                         <div class="why__we-list-item">
-                            <svg class="icon podhod">
-                                <use xlink:href="{{ asset('img/symbols.svg#podhod') }}"></use>
-                            </svg>
-                            <div class="separator"></div>
+                            <div class="step">05</div>
                             <div class="desc">Индивидуальный подход и расчет стоимости для каждого клиента</div>
                         </div>
                         <div class="why__we-list-item">
-                            <svg class="icon garantii">
-                                <use xlink:href="{{ asset('img/symbols.svg#garantii') }}"></use>
-                            </svg>
-                            <div class="separator"></div>
+                            <div class="step">06</div>
                             <div class="desc">Юридические гарантии (составление договора)</div>
                         </div>
                     </div>
@@ -133,7 +118,7 @@
         <div class="bg__box-section"></div>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <a href="{{ route('page.show', ['alias' => 'portfolio']) }}"><h3 class="as__h1">Новые работы нашей веб-студии</h3></a>
                     <div class="info">Работы нашей веб-студии, разработанные сайты, полезные кейсы.</div>
 
@@ -144,7 +129,7 @@
                         @endforeach
 
                         <div class="btn__more">
-                            <a href="{{ route('page.show', ['alias' => 'portfolio']) }}" class="btn green">БОЛЬШЕ РАБОТ</a>
+                            <a href="{{ route('page.show', ['alias' => 'portfolio']) }}" class="btn">БОЛЬШЕ РАБОТ</a>
                         </div>
 
                     </div>
@@ -156,7 +141,7 @@
     <section class="we__work">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <h3 class="as__h1">Мы работаем</h3>
                     <div class="info">Инструменты, которые мы используем для анализа и увеличения эффективности работы сайта.</div>
                     <div class="we__work-list">
@@ -200,7 +185,7 @@
     <section class="main__text">
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <h2>Наши преимущества в создании сайтов</h2>
                     <p>Цель нашей работы – стать для Вас надежным партнером. Мы делаем сайты в Крыму и мы умеем это делать! В нашей команде работают специалисты с опытом более 5 лет в сфере создания сайтов, интернет-маркетинга и продвижения услуг в интернете. Именно поэтому, обращаясь в веб-студию «Красбер», Вы получаете полный спектр услуг:</p>
 
@@ -222,7 +207,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <div class="order__service-form">
                         <div class="wrap">
                             <div class="desc">

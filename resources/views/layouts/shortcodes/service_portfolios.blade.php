@@ -17,7 +17,7 @@
                 @endif
                 <div class="link__more">
                     <div class="link__more-text">
-                        <a href="{{ $portfolio->url }}">ПОДРОБНЕЕ</a>
+                        <a href="{{ $portfolio->url }}" class="btn white">ПОДРОБНЕЕ</a>
                     </div>
                 </div>
             </div>
