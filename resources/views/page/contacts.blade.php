@@ -19,7 +19,7 @@
         <div class="bg__box"></div>
         <div class="container">
             <div class="row">
-                <div class="col-12 blue">
+                <div class="col-12">
                     <div class="contact__form">
                         <div class="wrap">
                             <div class="desc">

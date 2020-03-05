@@ -65,7 +65,7 @@
                 <input type="text" id="other_field" autocomplete="off">
             </div>
             <div class="right">
-                <div class="continue btn_style-two">Далее</div>
+                <div class="continue btn">Далее</div>
             </div>
         </fieldset>
         <fieldset data-step="2">
@@ -98,8 +98,8 @@
                 </li>
             </ul>
             <div class="right">
-                <div class="previous btn_style-two">Назад</div>
-                <div class="continue btn_style-two">Далее</div>
+                <div class="previous btn">Назад</div>
+                <div class="continue btn">Далее</div>
             </div>
         </fieldset>
         <fieldset data-step="3" class="multiple">
@@ -180,8 +180,8 @@
                 </li>
             </ul>
             <div class="right">
-                <div class="previous btn_style-two">Назад</div>
-                <div class="continue btn_style-two">Далее</div>
+                <div class="previous btn">Назад</div>
+                <div class="continue btn">Далее</div>
             </div>
         </fieldset>
         <fieldset data-step="4">

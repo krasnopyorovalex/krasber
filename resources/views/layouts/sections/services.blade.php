@@ -8,9 +8,6 @@
                     @foreach ($services as $service)
                     <div class="services__list-item{{ $loop->index === 0 ? ' is__open' : '' }}">
                         <a href="{{ route('service.show', $service->alias) }}" class="name">{{ $service->getMenuName() }}</a>
-                        <svg class="icon arrow_down">
-                            <use xlink:href="{{ asset('img/symbols.svg#arrow_down') }}"></use>
-                        </svg>
                         <div class="body">
                             <div class="desc">
                                 {!! strip_tags($service->preview) !!}

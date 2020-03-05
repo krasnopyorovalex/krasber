@@ -6,17 +6,24 @@
     <div class="bg__box"></div>
     <div class="container">
         <div class="row">
-            <div class="col-10">
+            <div class="col-12">
                 <h2>Тарифы контекстной рекламы</h2>
 
                 <div class="row">
                     <div class="tariff type-one col-4">
                         <div class="box">
-                            <div class="name">Самостоятельный</div>
+                            <div class="name">
+                                <p>пакет</p>
+                                <p>“Самостоятельный”</p>
+                            </div>
+                        </div>
+                        <div class="box box-bg">
+                            <div class="price">от <span>4 500</span> р.</div>
                             <svg class="icon arrow_down">
-                                <use xlink:href="./img/symbols.svg#arrow_down"></use>
+                                <use xlink:href="{{ asset('img/symbols.svg#arrow_down') }}"></use>
                             </svg>
                         </div>
+
                         <div class="body">
 
                             <p>Поисковая система: Яндекс или Гугл  (для одной)</p>
@@ -41,15 +48,18 @@
                             <div class="price">
                                 <p>Единоразовая настройка - 4 500 руб.</p>
                             </div>
-                            <a href="#" class="btn green call__popup" data-service="Самостоятельный">Заказать</a>
+                            <div class="btn green call__popup" data-service="Самостоятельный">Заказать</div>
                         </div>
                     </div>
-                    <div class="tariff type-two col-4 is__open">
+                    <div class="tariff type-two col-4">
                         <div class="box">
-                            <div class="name">Начинающий</div>
-                            <svg class="icon arrow_down">
-                                <use xlink:href="./img/symbols.svg#arrow_down"></use>
-                            </svg>
+                            <div class="name">
+                                <p>пакет</p>
+                                <p>“Начинающий”</p>
+                            </div>
+                        </div>
+                        <div class="box box-bg">
+                            <div class="price">от <span>3 000</span> р.</div>
                         </div>
                         <div class="body">
                             <p>Поисковая система: Яндекс или Гугл (для одной)</p>
@@ -73,15 +83,18 @@
                                 <p>Настройка - 3 000 руб.</p>
                                 <p>Ведение - 2 000 руб.</p>
                             </div>
-                            <a href="#" class="btn green call__popup" data-service="Начинающий">Заказать</a>
+                            <div class="btn green call__popup" data-service="Начинающий">Заказать</div>
                         </div>
                     </div>
                     <div class="tariff type-three col-4">
                         <div class="box">
-                            <div class="name">Продвинутый</div>
-                            <svg class="icon arrow_down">
-                                <use xlink:href="./img/symbols.svg#arrow_down"></use>
-                            </svg>
+                            <div class="name">
+                                <p>пакет</p>
+                                <p>“Продвинутый”</p>
+                            </div>
+                        </div>
+                        <div class="box box-bg">
+                            <div class="price">от <span>4 000</span> р.</div>
                         </div>
                         <div class="body">
                             <ul class="icon__plus">
@@ -97,7 +110,7 @@
                                 <p>При бюджете от 15 000 руб. - 20% от суммы за ведение контекста<p>
                                 <p>Рекламный бюджет - от 5 000 руб. в месяц на одну кампанию<p>
                             </div>
-                            <a href="#" class="btn green call__popup" data-service="Продвинутый">Заказать</a>
+                            <div class="btn green call__popup" data-service="Продвинутый">Заказать</div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +132,7 @@
                     <div class="wrap">
                         <div class="desc">
                             <div class="as__h1">Заказать услугу</div>
-                            <p>Вы можете бесплатно  получить аудит вашего сайта. Вас это не к чему не обязывает.</p>
+                            <p>Вы можете бесплатно  получить аудит вашего сайта.<br />Вас это ни к чему не обязывает.</p>
                         </div>
                         <div class="form__box">
                             <form action="{{ route('order.tariff.send') }}" class="order__service" id="order__tariff-form" method="post"onsubmit="yaCounter45495162.reachGoal('ZAKAZ'); return true">
@@ -142,7 +155,7 @@
                                     <input type="email" name="email" placeholder="Email" autocomplete="off">
                                 </div>
                                 <div class="single__block submit__block">
-                                    <button type="submit">Отправить</button>
+                                    <button type="submit" class="btn">Отправить</button>
                                 </div>
                                 <div class="single__block agree__block">
                                     <input type="checkbox" name="agree" id="i_agree-tariff" value="1" checked>
@@ -163,4 +176,4 @@
 <main>
     <div class="container">
         <div class="row">
-            <div class="col-10">
+            <div class="col-12">

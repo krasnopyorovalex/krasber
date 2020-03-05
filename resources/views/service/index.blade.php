@@ -104,7 +104,7 @@
 
     @include('layouts.forms.order', [
         'form_title' => 'Заказать консультацию',
-        'form_sub_title' => 'Вы можете получить консультацию по услуге ' . mb_strtolower($service->name) . '. Вас это ни к чему не обязывает'
+        'form_sub_title' => 'Заполните форму для заказа услуги.<br/> Наш менеджер свяжется с Вами в течение 24 часов!'
     ])
 
     @if (count($service->relatedServices))
