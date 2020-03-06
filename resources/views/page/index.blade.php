@@ -168,7 +168,7 @@
                             <img src="{{ asset('img/we_work-02.jpg') }}" alt="Яндекс.Директ" title="Онлайн реклама в поиске Яндекс">
                         </div>
                         <div class="we__work-list-item">
-                            <img src="{{ asset('img/we_work-03.jpeg') }}" alt="Google.Adwords" title="Онлайн реклама в поиске Google">
+                            <img src="{{ asset('img/google_adwords.jpg') }}" alt="Google.Adwords" title="Онлайн реклама в поиске Google">
                         </div>
                         <div class="we__work-list-item">
                             <img src="{{ asset('img/we_work-04.png') }}" alt="Google.Analytics" title="Google.Analytics - детальная статистика посещения Вашего веб-сайта">
