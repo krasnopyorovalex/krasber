@@ -165,13 +165,13 @@
                             <img src="{{ asset('img/we_work-01.png') }}" alt="Яндекс.Метрика" title="Бесплатный инструмент аналитики от Яндекс">
                         </div>
                         <div class="we__work-list-item">
+                            <img src="{{ asset('img/we_work-04.png') }}" alt="Google.Analytics" title="Google.Analytics - детальная статистика посещения Вашего веб-сайта">
+                        </div>
+                        <div class="we__work-list-item">
                             <img src="{{ asset('img/we_work-02.jpg') }}" alt="Яндекс.Директ" title="Онлайн реклама в поиске Яндекс">
                         </div>
                         <div class="we__work-list-item">
                             <img src="{{ asset('img/google_adwords.jpg') }}" alt="Google.Adwords" title="Онлайн реклама в поиске Google">
-                        </div>
-                        <div class="we__work-list-item">
-                            <img src="{{ asset('img/we_work-04.png') }}" alt="Google.Analytics" title="Google.Analytics - детальная статистика посещения Вашего веб-сайта">
                         </div>
                         <div class="we__work-list-item">
                             <img src="{{ asset('img/we_work-05.png') }}" alt="Topvisor" title="Topvisor - сервис поисковой аналитики">
