@@ -173,9 +173,9 @@
                         <div class="we__work-list-item">
                             <img src="{{ asset('img/google_adwords.jpg') }}" alt="Google.Adwords" title="Онлайн реклама в поиске Google">
                         </div>
-                        <div class="we__work-list-item">
-                            <img src="{{ asset('img/we_work-05.png') }}" alt="Topvisor" title="Topvisor - сервис поисковой аналитики">
-                        </div>
+{{--                        <div class="we__work-list-item">--}}
+{{--                            <img src="{{ asset('img/we_work-05.png') }}" alt="Topvisor" title="Topvisor - сервис поисковой аналитики">--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>
