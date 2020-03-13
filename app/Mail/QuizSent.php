@@ -30,7 +30,7 @@ class QuizSent extends Mailable
      */
     public function build(): QuizSent
     {
-        return $this->from('krasber.ru@ya.ru')
+        return $this->from('noreply@krasber.ru')
             ->subject('Форма: quiz')
             ->view('emails.quiz', [
                 'data' => $this->data

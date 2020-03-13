@@ -28,9 +28,9 @@ class OrderTariffSent extends Mailable
     /**
      * @return OrderTariffSent
      */
-    public function build()
+    public function build(): OrderTariffSent
     {
-        return $this->from('krasber.ru@ya.ru')
+        return $this->from('noreply@krasber.ru')
             ->subject('Форма: заказ тарифа')
             ->view('emails.order_tariff', [
                 'data' => $this->data

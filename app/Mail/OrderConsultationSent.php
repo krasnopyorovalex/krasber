@@ -28,9 +28,9 @@ class OrderConsultationSent extends Mailable
     /**
      * @return OrderConsultationSent
      */
-    public function build()
+    public function build(): OrderConsultationSent
     {
-        return $this->from('krasber.ru@ya.ru')
+        return $this->from('noreply@krasber.ru')
             ->subject('Форма: консультация')
             ->view('emails.order_consultation', [
                 'data' => $this->data

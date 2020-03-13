@@ -28,9 +28,9 @@ class SubscribeSent extends Mailable
     /**
      * @return SubscribeSent
      */
-    public function build()
+    public function build(): SubscribeSent
     {
-        return $this->from('krasber.ru@ya.ru')
+        return $this->from('noreply@krasber.ru')
             ->subject('Форма: заявка на подписку')
             ->view('emails.subscribe', [
                 'data' => $this->data

@@ -28,9 +28,9 @@ class OrderServiceSent extends Mailable
     /**
      * @return OrderServiceSent
      */
-    public function build()
+    public function build(): OrderServiceSent
     {
-        return $this->from('krasber.ru@ya.ru')
+        return $this->from('noreply@krasber.ru')
             ->subject('Форма: заказать услугу')
             ->view('emails.order_service', [
                 'data' => $this->data
