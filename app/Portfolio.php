@@ -52,7 +52,7 @@ class Portfolio extends Model
      */
     public function getUrlAttribute(): string
     {
-        return route("portfolio.show", $this->alias);
+        return route('portfolio.show', $this->alias);
     }
 
     /**

@@ -47,29 +47,23 @@
                                     <img src="{{ asset('img/banner-02.png') }}" alt="Бесплатный аудит сайта" title="Заказать бесплатный аудит сайта" class="call__popup" data-service="Юзабили аудит">
                                 </div>
                             </div>
-                            {{--<aside class="other__articles">--}}
-                                {{--<div class="title">ЧИТАЙТЕ ПО ТЕМЕ</div>--}}
-                                {{--<div class="other__articles-row">--}}
-                                    {{--<div class="other__articles-image">--}}
-                                        {{--<figure>--}}
-                                            {{--<img src="/img/article_another.png" alt="alt">--}}
-                                        {{--</figure>--}}
-                                    {{--</div>--}}
-                                    {{--<div class="other__articles-name">--}}
-                                        {{--<div class="name">Где заказать сайт: фриланс или веб-студия</div>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                                {{--<div class="other__articles-row">--}}
-                                    {{--<div class="other__articles-image">--}}
-                                        {{--<figure>--}}
-                                            {{--<img src="/img/article_another.png" alt="alt">--}}
-                                        {{--</figure>--}}
-                                    {{--</div>--}}
-                                    {{--<div class="other__articles-name">--}}
-                                        {{--<div class="name">Где заказать сайт: фриланс или веб-студия</div>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</aside>--}}
+                            <aside class="other__articles">
+                                <div class="title">Последние наши работы</div>
+                                @foreach($latestPortfolios as $latestPortfolio)
+                                <div class="other__articles-row">
+                                    <div class="other__articles-image">
+                                        @if($latestPortfolio->image)
+                                        <figure>
+                                            <img src="{{ $latestPortfolio->image->path }}" alt="{{ $latestPortfolio->image->alt }}" title="{{ $latestPortfolio->image->title }}">
+                                        </figure>
+                                        @endif
+                                    </div>
+                                    <div class="other__articles-name">
+                                        <a href="{{ $latestPortfolio->url }}" class="name">{{ $latestPortfolio->name }}</a>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </aside>
                         </div>
                     </div>
                 </div>
