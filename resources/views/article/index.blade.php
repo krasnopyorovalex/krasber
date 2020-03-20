@@ -53,11 +53,11 @@
                                 <div class="other__articles-row">
                                     <div class="other__articles-image">
                                         @if($latestPortfolio->image)
-                                        <figure>
-                                            <a href="{{ $latestPortfolio->url }}">
+                                        <a href="{{ $latestPortfolio->url }}">
+                                            <figure>
                                                 <img src="{{ $latestPortfolio->image->path }}" alt="{{ $latestPortfolio->image->alt }}" title="{{ $latestPortfolio->image->title }}">
-                                            </a>
-                                        </figure>
+                                            </figure>
+                                        </a>
                                         @endif
                                     </div>
                                     <div class="other__articles-name">
