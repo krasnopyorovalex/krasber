@@ -54,7 +54,9 @@
                                     <div class="other__articles-image">
                                         @if($latestPortfolio->image)
                                         <figure>
-                                            <img src="{{ $latestPortfolio->image->path }}" alt="{{ $latestPortfolio->image->alt }}" title="{{ $latestPortfolio->image->title }}">
+                                            <a href="{{ $latestPortfolio->url }}">
+                                                <img src="{{ $latestPortfolio->image->path }}" alt="{{ $latestPortfolio->image->alt }}" title="{{ $latestPortfolio->image->title }}">
+                                            </a>
                                         </figure>
                                         @endif
                                     </div>
