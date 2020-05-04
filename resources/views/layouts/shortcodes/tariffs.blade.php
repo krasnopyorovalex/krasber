@@ -159,7 +159,7 @@
                                 </div>
                                 <div class="single__block agree__block">
                                     <input type="checkbox" name="agree" id="i_agree-tariff" value="1" checked>
-                                    <label for="i_agree-tariff">Отправляя заяявку  вы соглашаетесь с <a href="#">правилами офферты</a></label>
+                                    <label for="i_agree-tariff">Оставляя заявку, Вы соглашаетесь на <a href="{{ route('page.show', ['alias' => 'personal-data']) }}" target="_blank" title="Перейти на страницу описания">обработку персональных данных</a></label>
                                     <p class="error">Согласитесь на обработку персональных данных</p>
                                 </div>
                             </form>
