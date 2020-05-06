@@ -13,7 +13,7 @@ class OrderConsultationRequest extends Request
     public function rules(): array
     {
         return [
-            'name' => 'required|string|min:3|max:40',
+            'name' => 'required|string|min:3|max:40|regex:/[А-Яа-яЁё]/u',
             'email' => 'required|email',
             'phone' => 'required|string|min:5',
             'message' => 'string|nullable'

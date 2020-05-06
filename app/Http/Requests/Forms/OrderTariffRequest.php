@@ -15,7 +15,7 @@ class OrderTariffRequest extends Request
     {
         return [
             'tariff' => ['required', 'string', new Tariffs],
-            'name' => 'required|string|min:3|max:40',
+            'name' => 'required|string|min:3|max:40|regex:/[А-Яа-яЁё]/u',
             'phone' => 'required|string|min:5',
             'email' => 'required|email'
         ];

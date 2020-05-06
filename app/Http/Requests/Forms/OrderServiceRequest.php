@@ -15,7 +15,7 @@ class OrderServiceRequest extends Request
     {
         return [
             'service' => ['required', 'string', new ServicesList],
-            'name' => 'required|string|min:3|max:40',
+            'name' => 'required|string|min:3|max:40|regex:/[А-Яа-яЁё]/u',
             'phone' => 'required|string|min:5',
             'email' => 'required|email'
         ];
