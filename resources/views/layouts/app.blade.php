@@ -73,7 +73,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-6 footer__contacts-text">
+                        <div class="col-6 footer__contacts-text">песня
+
                             Звоните, пишите, договоримся!
                         </div>
                         <div class="col-6 footer__contacts-messengers">

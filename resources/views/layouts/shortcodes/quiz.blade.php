@@ -204,7 +204,9 @@
                         </div>
                         <div class="single__block agree__block">
                             <input type="checkbox" name="agree" id="i_agree_quiz" value="1" checked>
-                            <label for="i_agree_quiz">Отправляя заяявку  вы соглашаетесь с <a href="#" title="Перейти на страницу описания">правилами офферты</a></label>
+                            <label for="i_agree_quiz">
+                                Оставляя заявку, Вы соглашаетесь на <a href="{{ route('page.show', ['alias' => 'personal-data']) }}" target="_blank" title="Перейти на страницу описания">обработку персональных данных</a>
+                            </label>
                         </div>
                         <div class="single_block submit__block">
                             <button type="submit" class="btn">Отправить</button>
