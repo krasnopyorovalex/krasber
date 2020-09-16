@@ -22,7 +22,7 @@
                         <div class="slogan__box">
                             <div class="slogan__box">
                                 <p>{!! $page->slogan !!}</p>
-                                <span>Сделаем сайт для Вашего<br />бизнеса за 7 рабочих дней.<br />Домен в подарок!</span>
+                                <span>Сделаем сайт для Вашего<br />бизнеса за 7 рабочих дней.<br />Домен + https + хостинг на год в подарок!</span>
                                 <a href="{{ route('page.show', ['alias' => 'quiz']) }}" class="btn white">Рассчитать стоимость сайта</a>
                             </div>
                         </div>
