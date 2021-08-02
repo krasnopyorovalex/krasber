@@ -30,7 +30,7 @@
                     <td>
                         <div>
                             <a href="{{ route('admin.menus.edit', $menu) }}"><i class="icon-pencil7"></i></a>
-                            <a href="{{ route('admin.menu_items.index', ['parent' => $menu->id]) }}" data-original-title="Пункты меню" data-popup="tooltip"><i class="icon-lan2"></i></a>
+                            <a href="{{ route('admin.menu_items.index', ['menu' => $menu->id]) }}" data-original-title="Пункты меню" data-popup="tooltip"><i class="icon-lan2"></i></a>
                             <form method="POST" action="{{ route('admin.menus.destroy', $menu) }}" class="form__delete">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
