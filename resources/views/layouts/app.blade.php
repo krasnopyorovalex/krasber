@@ -126,7 +126,7 @@
                     <div class="row list__columns">
                         <div class="col__logo">
                             <div class="copyright">
-                                <span itemprop="copyrightYear">2017</span> - {{ date('Y') }} © Создание и продвижение сайтов. ИНН 910601621324
+                                <span itemprop="copyrightYear">2017</span> - {{ date('Y') }} © Создание и продвижение сайтов.
                                 <p>Вся информация, представленная на сайте, носит информационный характер и ни при каких условиях не является публичной офертой.</p>
                             </div>
                         </div>
