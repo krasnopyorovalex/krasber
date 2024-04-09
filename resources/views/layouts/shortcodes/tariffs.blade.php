@@ -18,7 +18,7 @@
                             </div>
                         </div>
                         <div class="box box-bg">
-                            <div class="price">от <span>5 500</span> р.</div>
+                            <div class="price">от <span>7 000</span> р.</div>
                             <svg class="icon arrow_down">
                                 <use xlink:href="{{ asset('img/symbols.svg#arrow_down') }}"></use>
                             </svg>
