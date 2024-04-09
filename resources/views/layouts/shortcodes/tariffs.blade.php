@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="box box-bg">
-                            <div class="price">от <span>6 000</span> р.</div>
+                            <div class="price">от <span>8 000</span> р.</div>
                         </div>
                         <div class="body">
                             <ul class="icon__plus">
