@@ -46,7 +46,7 @@
                                 <li>Передача доступов от рекламного кабинета</li>
                             </ul>
                             <div class="price">
-                                <p>Единоразовая настройка - 5 500 руб.</p>
+                                <p>Единоразовая настройка - 7 500 руб.</p>
                             </div>
                             <div class="btn green call__popup" data-service="Самостоятельный">Заказать</div>
                         </div>
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="box box-bg">
-                            <div class="price">от <span>3 500</span> р.</div>
+                            <div class="price">от <span>5 500</span> р.</div>
                         </div>
                         <div class="body">
                             <p>Поисковая система: Яндекс или Гугл (для одной)</p>
@@ -80,8 +80,8 @@
                                 <li>Предоставление отчета 2 раза в месяц</li>
                             </ul>
                             <div class="price">
-                                <p>Настройка - 4 500 руб.</p>
-                                <p>Ведение - 3 500 руб.</p>
+                                <p>Настройка - 6 500 руб.</p>
+                                <p>Ведение - 5 500 руб.</p>
                             </div>
                             <div class="btn green call__popup" data-service="Начинающий">Заказать</div>
                         </div>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="box box-bg">
-                            <div class="price">от <span>4 000</span> р.</div>
+                            <div class="price">от <span>6 000</span> р.</div>
                         </div>
                         <div class="body">
                             <ul class="icon__plus">
@@ -105,9 +105,9 @@
                                 <li>Еженедельный отчет</li>
                             </ul>
                             <div class="price">
-                                <p>Стоимость настройки - 5 000 руб.</p>
-                                <p>Ведение - 4 000 руб.</p>
-                                <p>Рекламный бюджет - от 10 000 руб. в месяц на одну кампанию<p>
+                                <p>Стоимость настройки - 7 000 руб.</p>
+                                <p>Ведение - 6 000 руб.</p>
+                                <p>Рекламный бюджет - от 12 000 руб. в месяц на одну кампанию<p>
                             </div>
                             <div class="btn green call__popup" data-service="Продвинутый">Заказать</div>
                         </div>
